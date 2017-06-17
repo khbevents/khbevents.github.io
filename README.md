@@ -1,2 +1,0 @@
-# khbevents.github.io
-khbevents
