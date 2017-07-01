@@ -29,31 +29,68 @@
 	.floatingimg {left:50%; top:50%; position:absolute; margin-top:-410px; margin-left:150px; opacity:0.5;}
 	.floatingimg:hover {opacity:1.0; }
 	
-	.container {padding-right: 0px;  padding-left: 0px; }
-	
-	@media all and (min-width: 801px) {
+	@media all and (min-width: 801px) {.hider2{display:none;}}
+	@media all and (max-width: 800px) {.hider{display:none;}}
 
-    .hider2{display:none;}
-    
-}
-@media all and (max-width: 800px) {
-
-    .hider{display:none;}
-    
-}
-
-body, html, div {
+body, html {
     height: 100%;
 	padding: 0;
     margin: 0;
 }
-.bg {
+div#div100 {
+    height: 90vh;
+	padding: 0;
+    margin: 0;
+}
+.bg1 {
     /* The image used */
-    background-image: url(images/Exhibition2.jpg);
-    
+    background-image: url(images/Business2.jpg);
     /* Full height */
     height:100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.bg2 {
+    /* The image used */
+    background-image: url(images/conference2.jpg);
+    /* Full height */
+    height:100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg3 {
+    /* The image used */
+    background-image: url(images/Events2.jpg);
+    /* Full height */
+    height:100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg4 {
+    /* The image used */
+    background-image: url(images/Exhibition2.jpg);
+    /* Full height */
+    height:100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg5 {
+    /* The image used */
+    background-image: url(images/Exhibition2.jpg);
+    /* Full height */
+    height:100%; 
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -84,10 +121,13 @@ body, html, div {
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#alnajahevents.com">
-		<img style="max-height:100%;" "border:dotted;" src="images2/logo3.png" alt="Al Najah International">
-        </a>
-      </div>
+        <a class="navbar-left" href="#alnajahevents.com">
+		<img  src="images2/newlogo.png" alt="Al Najah International"  height="80">
+		</a>
+		<a class="navbar-left" href="#alnajahevents.com">
+		<img  src="images2/newname.png" alt="Al Najah International"  height="80">
+		</a>
+		</div>
       <div id="navbar3" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="#">Home</a></li>
@@ -119,7 +159,7 @@ body, html, div {
   <div class="carousel-inner" role="listbox">
     <div class="item active">
         <div class="hider"><img src="images/business.jpg" data-color="lightblue" alt="First Image" width="100%" ></div>
-			<div class="hider2"><div class="bg"></div></div>
+			<div id="div100" class="hider2"><div class="bg1"></div></div>
 		<div class="carousel-caption">
             <h3>First Image</h3>
         </div>
@@ -127,7 +167,7 @@ body, html, div {
     <div class="item">
         
 		<div class="hider"><img src="images/conference.jpg" data-color="firebrick" alt="Second Image" width="100%" ></div>
-		<div class="hider2"><div class="bg"></div></div>
+		<div id="div100" class="hider2"><div class="bg2"></div></div>
         <div class="carousel-caption">
             <h3>Second Image</h3>
         </div>
@@ -135,7 +175,7 @@ body, html, div {
     <div class="item">
         
 		<div class="hider"><img src="images/events.jpg" data-color="violet" alt="Third Image"  width="100%"></div>
-		<div class="hider2"><div class="bg"></div></div>
+		<div id="div100" class="hider2"><div class="bg3"></div></div>
         <div class="carousel-caption">
             <h3>Third Image</h3>
         </div>
@@ -143,7 +183,7 @@ body, html, div {
     <div class="item">
         
 		<div class="hider"><img src="images/Exhibition.jpg" data-color="lightgreen" alt="Fourth Image" width="100%"></div>
-		<div class="hider2"><div class="bg"></div></div>
+		<div id="div100" class="hider2"><div class="bg4"></div></div>
         <div class="carousel-caption">
             <h3>Fourth Image</h3>
         </div>
@@ -151,7 +191,7 @@ body, html, div {
     <div class="item">
        
 		<div class="hider"><img src="images/conference.jpg" data-color="tomato" alt="Fifth Image" width="100%"></div>
-		<div class="hider2"><div class="bg" ></div></div>
+		<div id="div100" class="hider2" ><div class="bg5"></div></div>
         <div class="carousel-caption">
             <h3>Fifth Image</h3>
         </div>
@@ -186,37 +226,27 @@ body, html, div {
   
  </div>
   
-  
+
+  <img src="images2/floatinslide2.png" width="100%" />
+ <p>Al-Najah International Events is a global service provider with one of the best business intelligence solutions today around the world with
+competitive Business to Business platforms. Focusing towards Business Events, Business Conferences, Business Trainings and Exhibitions.
+</p><p>
+Al-Najah has quickly evolved to be one of the best premier in event-planning and designing company's based out of GCC. Our people is our
+strongest assets. The team at Al-Najah is trained and motivated to think out of the box and to be creative in providing solutions 
+</p>
+
+
+
+
+
+
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-	<!-- LOGIN POP UP -->
-<script src="assets/frontend/dist/scripts/bundle.min.js"></script>
-<script src="assets/frontend/dist/scripts/app.min.js"></script>
-<script src="assets/frontend/dist/scripts/jquery.validate.min.js"></script>
-<script src="assets/frontend/dist/scripts/jquery-ui.js"></script>
-
-
-<script>
-  $(document).ready(function() {
-              var slider = glaze.glazeSingleSubSlider('.glazeSlider' , 800, 3000); 
-              var slider1 = glaze.glazeSingleSubSlider('.glazeSingleSubSlider' , 800, 500);  
-            });
-</script>
 	
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-90804013-1', 'auto');
-  ga('send', 'pageview');
-
-</script>	
 
   </body>
 </html>
