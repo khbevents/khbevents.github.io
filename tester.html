@@ -32,22 +32,26 @@
 	@media all and (min-width: 801px) {.hider2{display:none;}}
 	@media all and (max-width: 800px) {.hider{display:none;}}
 
+/*for full page image view*/
 body, html {
     height: 100%;
 	padding: 0;
     margin: 0;
-}
-.navbar-nav>li>a {
-    line-height: 50px;
-}
-.navbar-toggle {
-    margin-top: 20px;
 }
 div#div100 {
     height: 90vh;
 	padding: 0;
     margin: 0;
 }
+/*pc view nav bar height*/
+.navbar-nav>li>a {
+    line-height: 50px;
+}
+/*mobile view nav bar center*/
+.navbar-toggle {
+    margin-top: 20px;
+}
+
 .bg1 {
     /* The image used */
     background-image: url(images/business.jpg);
@@ -135,7 +139,8 @@ div#div100 {
 		</a>
 		</div>
       <div id="navbar3" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right navbar">
+        <ul role="menubar" class="nav navbar-nav navbar-right navbar">
+		 
           <li class="active"><a href="#">Home</a></li>
           <li><a href="en/about-us.html">About-Us</a></li>
           <li><a href="en/events.html">Events</a></li>
@@ -239,6 +244,63 @@ strongest assets. The team at Al-Najah is trained and motivated to think out of 
 </div>
 </section>
 
+<div class="container">
+  <div class="row">
+    <h2>Our Services</h2>
+  </div>
+  <div class='row'>
+    <div class='col-md-12'>
+      <div class="carousel slide media-carousel" id="media">
+        <div class="carousel-inner">
+          
+		  <div class="item  active">
+            <div class="row">
+              <div class="col-md-4">
+                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+              </div>          
+              <div class="col-md-4 hidden-xs">
+                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+              </div>
+              <div class="col-md-4 hidden-xs">
+                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+              </div>        
+            </div>
+          </div>
+          
+		  <div class="item">
+            <div class="row">
+              <div class="col-md-4">
+                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+              </div>          
+              <div class="col-md-4 hidden-xs">
+                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+              </div>
+              <div class="col-md-4 hidden-xs">
+                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+              </div>        
+            </div>
+          </div>
+          
+		  <div class="item">
+            <div class="row">
+              <div class="col-md-4">
+                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+              </div>          
+              <div class="col-md-4 hidden-xs">
+                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+              </div>
+              <div class="col-md-4 hidden-xs">
+                <a class="thumbnail" href="#"><img alt="" src="http://placehold.it/150x150"></a>
+              </div>      
+            </div>
+          </div>
+        </div>
+        <a data-slide="prev" href="#media" class="left carousel-control">‹</a>
+        <a data-slide="next" href="#media" class="right carousel-control">›</a>
+      </div>                          
+    </div>
+  </div>
+</div>
 
 
 
