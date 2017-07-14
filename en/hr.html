@@ -59,18 +59,18 @@ img{
 	float:left;
 	margin: ;
 }
+@media all and (min-width: 800px){.carousel-inner
+{margin:auto; width:80%; border: 1px solid red;}}
+@media all and (max-width: 800px) {
+.carousel-inner {border: 1px solid blue; width:100%;}}
 
-.carousel-inner
-{
-margin:auto; 
-width:80%; 
-border: 1px solid blue;
-}
 
 @media all and (min-width: 800px) {
 .contain-speaker{width:70%; float:left;}
 .contain-partners{width:25%; margin-left:5%; float:left;}
 }
+@media all and (min-width: 800px){.c2image {height:150px; width:150px}}
+@media all and (max-width: 800px){.c2image {height:100px; max-width:100px}}
 
 </style>
 
@@ -181,11 +181,11 @@ border: 1px solid blue;
 <a href="../index.html">Home</a>
 </li>
 
-<li class=" active-main-menu ">
+<li>
 <a  aria-title="Main Navigation Profile"  data-slug="profile" href="about-us.html" class=" " >About us</a> 
 </li>
 
-<li class="dropdown smallMenu has-submenu ">
+<li class="dropdown smallMenu has-submenu active-main-menu">
  <span class="arrow-submenu"></span>
  <a  href="events.html" class=" dropdown-toggle disabled "data-toggle="dropdown" >
  Events</a>
@@ -228,7 +228,7 @@ border: 1px solid blue;
 <div class="container">
 <div style="text-align:center;">
 <h2>National Human Resource Conference – 2017</h2>
-<h3>21st September 2017 @ Radisson Blu Hotel</h3>
+<h5>21st September 2017 @ Radisson Blu Hotel</h5>
 <h3>Kingdom of Bahrain</h3>
 <h4>About National HR Conference:</h4>
 </div>
@@ -241,30 +241,10 @@ We are committed to promoting diversity by increasing awareness of and valuing t
 </p>
 </div>
 
-<div class="container">
-<div style="float:left; border:1px solid blue; width:100px;"><h5>Participating Companies</h5>
-<marquee direction="up" height="500px">
-<img class="upslide" src="../images2/hr/hr-event.png"><br>
-<img class="upslide" src="../images2/hr/hr-event.png"><br>
-<img class="upslide" src="../images2/hr/hr-event.png"><br>
-<img class="upslide" src="../images2/hr/hr-event.png"><br>
-<img class="upslide" src="../images2/hr/hr-event.png"><br>
-<img class="upslide" src="../images2/hr/hr-event.png"><br>
-</marquee>
-</div>
-<div style="float:right; border:1px solid blue; width:100px;"><h5>Sponsering Companies</h5>
-<marquee direction="up" height="500px">
-<img class="upslide" src="../images2/hr/hr-event.png"><br>
-<img class="upslide" src="../images2/hr/hr-event.png"><br>
-<img class="upslide" src="../images2/hr/hr-event.png"><br>
-<img class="upslide" src="../images2/hr/hr-event.png"><br>
-<img class="upslide" src="../images2/hr/hr-event.png"><br>
-<img class="upslide" src="../images2/hr/hr-event.png"><br>
-</marquee>
-</div>
+<div class="container ">
+<div class="row">
 
-
-<div style="margin:auto; max-width:500px; display:block; border:1px solid blue;">
+<div class="col-xs-12 visible-xs" style="border:1px solid blue;">
 <h2><center>Chief&nbsp;Guest</center></h2>
 <img class="img-responsive" src="../images2/hr/1.jpg" style="max-width:150px; margin:auto;">
 <center>Chief Guest:
@@ -278,86 +258,91 @@ We are committed to promoting diversity by increasing awareness of and valuing t
 <br>(CEO of Ahil Al Azim (Magazine))
 </center>
  </div>
+
+
+<div class="col-xs-6 col-sm-2" style="border:1px solid blue;"><h5>Participating Companies</h5>
+<marquee direction="up" height="500px">
+<img class="upslide" src="../images2/hr/hr-event.png"><br>
+<img class="upslide" src="../images2/hr/hr-event.png"><br>
+<img class="upslide" src="../images2/hr/hr-event.png"><br>
+<img class="upslide" src="../images2/hr/hr-event.png"><br>
+<img class="upslide" src="../images2/hr/hr-event.png"><br>
+<img class="upslide" src="../images2/hr/hr-event.png"><br>
+</marquee>
+</div>
+
+
+<div class="col-sm-8 hidden-xs" style="border:1px solid blue;">
+<h2><center>Chief&nbsp;Guest</center></h2>
+<img class="img-responsive" src="../images2/hr/1.jpg" style="max-width:150px; margin:auto;">
+<center>Chief Guest:
+<br>Her Excellency Shaikha Noora Bent Khalifa Al Khalifa
+<br>(National brand ambassador of the International Non-Olympic University)
+<br>(Member of the Board of Directors for Arab Union to protect intellectual property rights)
+<br>(CEO & Chair Woman of Medpoint Design)
+<br>(CEO & Chair Woman of Nine Training Center)
+<br>(CEO & Chair Woman of 8 Printing Press)
+<br>(CEO of Bahrain This Week (Weekly Paper))
+<br>(CEO of Ahil Al Azim (Magazine))
+</center>
  </div>
+ <div class="col-xs-6 col-sm-2" style="border:1px solid blue;"><h5>Sponsering Companies</h5>
+<marquee direction="up" height="500px">
+<img class="upslide" src="../images2/hr/hr-event.png"><br>
+<img class="upslide" src="../images2/hr/hr-event.png"><br>
+<img class="upslide" src="../images2/hr/hr-event.png"><br>
+<img class="upslide" src="../images2/hr/hr-event.png"><br>
+<img class="upslide" src="../images2/hr/hr-event.png"><br>
+<img class="upslide" src="../images2/hr/hr-event.png"><br>
+</marquee>
+</div>
+
+ 
+ </div></div>
 
 
 <div id="mycarousel-2" class="carousel slide contain-speaker" data-ride="carousel">
   <h2><center>Our Speakers</center></h2>
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
-    <div class="item active">
-			<div class="visible-xs"><img alt="" src="../images2/logo/1.png" style="height:150px; width:150px;"></div>
-			<div class="gallery hidden-xs"><img alt="" src="../images2/logo/1.png" style="height:150px; width:150px;"></div>
-			<div class="gallery hidden-xs"><img alt="" src="../images2/logo/2.png" style="height:150px; width:150px;"></div>
-			<div class="gallery hidden-xs"><img alt="" src="../images2/logo/3.png" style="height:150px; width:150px;"></div>
+   
+	<div class="item active">
+			<div class="gallery"><img class="c2image" alt="" src="../images2/logo/1.png"></div>
+			<div class="gallery"><img class="c2image" alt="" src="../images2/logo/2.png"></div>
+			<div class="gallery"><img class="c2image" alt="" src="../images2/logo/3.png"></div>
 
 		
     </div>
     <div class="item">
-			<div class="visible-xs"><img alt="" src="../images2/logo/2.png" style="height:150px; width:150px;"></div>
-			<div class="gallery hidden-xs"><img alt="" src="../images2/logo/4.png" style="height:150px; width:150px;"></div>
-			<div class="gallery hidden-xs"><img alt="" src="../images2/logo/5.png" style="height:150px; width:150px;"></div>
-			<div class="gallery hidden-xs"><img alt="" src="../images2/logo/6.png" style="height:150px; width:150px;"></div>
+			<div class="gallery"><img class="c2image" alt="" src="../images2/logo/4.png"></div>
+			<div class="gallery"><img class="c2image" alt="" src="../images2/logo/5.png"></div>
+			<div class="gallery"><img class="c2image" alt="" src="../images2/logo/6.png"></div>
 
 
     </div>
     <div class="item">
-			<div class="visible-xs"><img alt="" src="../images2/logo/3.png" style="height:150px; width:150px;"></div>
-			<div class="gallery hidden-xs"><img alt="" src="../images2/logo/7.png" style="height:150px; width:150px;"></div>
-			<div class="gallery hidden-xs"><img alt="" src="../images2/logo/8.png" style="height:150px; width:150px;"></div>
-			<div class="gallery hidden-xs"><img alt="" src="../images2/logo/9.png" style="height:150px; width:150px;"></div>
+			<div class="gallery"><img class="c2image" alt="" src="../images2/logo/7.png"></div>
+			<div class="gallery"><img class="c2image" alt="" src="../images2/logo/8.png"></div>
+			<div class="gallery"><img class="c2image" alt="" src="../images2/logo/9.png"></div>
 
 
     </div>
     <div class="item">
-			<div class="visible-xs"><img alt="" src="../images2/logo/4.png" style="height:150px; width:150px;"></div>
-			<div class="gallery hidden-xs"><img alt="" src="../images2/logo/10.png" style="height:150px; width:150px;"></div>
-			<div class="gallery hidden-xs"><img alt="" src="../images2/logo/11.png" style="height:150px; width:150px;"></div>
-			<div class="gallery hidden-xs"><img alt="" src="../images2/logo/12.png" style="height:150px; width:150px;"></div>
+			<div class="gallery"><img class="c2image" alt="" src="../images2/logo/10.png"></div>
+			<div class="gallery"><img class="c2image" alt="" src="../images2/logo/11.png"></div>
+			<div class="gallery"><img class="c2image" alt="" src="../images2/logo/12.png"></div>
 
 
     </div>
     <div class="item">
-			<div class="visible-xs"><img alt="" src="../images2/logo/5.png" style="height:150px; width:150px;"></div>
-			<div class="gallery hidden-xs"><img alt="" src="../images2/logo/13.png" style="height:150px; width:150px;"></div>
-			<div class="gallery hidden-xs"><img alt="" src="../images2/logo/14.png" style="height:150px; width:150px;"></div>
-			<div class="gallery hidden-xs"><img alt="" src="../images2/logo/15.png" style="height:150px; width:150px;"></div>
+			<div class="gallery"><img class="c2image" alt="" src="../images2/logo/13.png"></div>
+			<div class="gallery"><img class="c2image" alt="" src="../images2/logo/14.png"></div>
+			<div class="gallery"><img class="c2image" alt="" src="../images2/logo/15.png"></div>
 	
 
     </div>
-	<div class="item">
-			<div class="visible-xs"><img alt="" src="../images2/logo/6.png" style="height:150px; width:150px;"></div>
-    </div>
-	<div class="item">
-			<div class="visible-xs"><img alt="" src="../images2/logo/7.png" style="height:150px; width:150px;"></div>
-    </div>
-	<div class="item">
-			<div class="visible-xs"><img alt="" src="../images2/logo/8.png" style="height:150px; width:150px;"></div>
-    </div>
-	<div class="item">
-			<div class="visible-xs"><img alt="" src="../images2/logo/9.png" style="height:150px; width:150px;"></div>
-    </div>
-	<div class="item">
-			<div class="visible-xs"><img alt="" src="../images2/logo/10.png" style="height:150px; width:150px;"></div>
-    </div>
-	<div class="item">
-			<div class="visible-xs"><img alt="" src="../images2/logo/11.png" style="height:150px; width:150px;"></div>
-    </div>
-	<div class="item">
-			<div class="visible-xs"><img alt="" src="../images2/logo/12.png" style="height:150px; width:150px;"></div>
-    </div>
-	<div class="item">
-			<div class="visible-xs"><img alt="" src="../images2/logo/13.png" style="height:150px; width:150px;"></div>
-    </div>
-	<div class="item">
-			<div class="visible-xs"><img alt="" src="../images2/logo/14.png" style="height:150px; width:150px;"></div>
-    </div>
-	<div class="item">
-			<div class="visible-xs"><img alt="" src="../images2/logo/15.png" style="height:150px; width:150px;"></div>
-    </div>
-
-
-
+	
+	
 	</div>
 
   <!-- Controls -->
@@ -370,7 +355,6 @@ We are committed to promoting diversity by increasing awareness of and valuing t
     <span class="sr-only">Next</span>
   </a>
 </div>
-
 
 <div id="mycarousel-3" class="carousel slide contain-partners" data-ride="carousel">
   <h2><center>Media Partners</center></h2>
