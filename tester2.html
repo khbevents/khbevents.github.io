@@ -28,13 +28,77 @@
 		
 		<style type="text/css">
 		
-.upslide{
-
-height:100px;
-width:100px;
-border:
-1px solid yellow;
+		
+/*for full page image view*/
+body, html {
+    height: 100%;
+	padding: 0;
+    margin: 0;
 }
+div#div100 {
+    height: 90vh;
+	padding: 0;
+    margin: 0;
+}
+
+.bg1 {
+    /* The image used */
+    background-image: url(images/business.jpg);
+    /* Full height */
+    height:100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg2 {
+    /* The image used */
+    background-image: url(images/10.2.jpeg);
+    /* Full height */
+    height:100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg3 {
+    /* The image used */
+    background-image: url(images/1.2.jpg);
+    /* Full height */
+    height:100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg4 {
+    /* The image used */
+    background-image: url(images/Exhibition.jpg);
+    /* Full height */
+    height:100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg5 {
+    /* The image used */
+    background-image: url(images/15.jpg);
+    /* Full height */
+    height:100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+	
+
+
+
 
 
 		</style>
@@ -42,66 +106,98 @@ border:
   </head>
   <body>
  
-<div class="container ">
-<div class="row">
+<div id="mycarousel-1" class="carousel slide" data-ride="carousel">
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+        	<div id="div100" ><div class="bg1"></div></div>
+		<div class="carousel-caption">
+            <h3>First Image</h3>
+        </div>
+    </div>
+    <div class="item">
+        
+			<div id="div100" ><div class="bg2"></div></div>
+        <div class="carousel-caption">
+            <h3>Second Image</h3>
+        </div>
+    </div>
+    <div class="item">
+        
+		<div id="div100" ><div class="bg3"></div></div>
+        <div class="carousel-caption">
+            <h3>Third Image</h3>
+        </div>
+    </div>
+    <div class="item">
+        
+		<div id="div100"><div class="bg4"></div></div>
+        <div class="carousel-caption">
+            <h3>Fourth Image</h3>
+        </div>
+    </div>
+    <div class="item">
+        
+		<div id="div100"><div class="bg5"></div></div>
+        <div class="carousel-caption">
+            <h3>Fifth Image</h3>
+        </div>
+    </div>
+  </div>
 
-<div class="col-xs-12 visible-xs" style="border:1px solid blue;">
-<h2><center>Chief&nbsp;Guest</center></h2>
-<img class="img-responsive" src="../images2/hr/1.jpg" style="max-width:150px; margin:auto;">
-<center>Chief Guest:
-<br>Her Excellency Shaikha Noora Bent Khalifa Al Khalifa
-<br>(National brand ambassador of the International Non-Olympic University)
-<br>(Member of the Board of Directors for Arab Union to protect intellectual property rights)
-<br>(CEO & Chair Woman of Medpoint Design)
-<br>(CEO & Chair Woman of Nine Training Center)
-<br>(CEO & Chair Woman of 8 Printing Press)
-<br>(CEO of Bahrain This Week (Weekly Paper))
-<br>(CEO of Ahil Al Azim (Magazine))
-</center>
- </div>
-
-
-<div class="col-xs-6 col-sm-2" style="border:1px solid blue;"><h5>Participating Companies</h5>
-<marquee direction="up" height="500px">
-<img class="upslide" src="../images2/hr/hr-event.png"><br>
-<img class="upslide" src="../images2/hr/hr-event.png"><br>
-<img class="upslide" src="../images2/hr/hr-event.png"><br>
-<img class="upslide" src="../images2/hr/hr-event.png"><br>
-<img class="upslide" src="../images2/hr/hr-event.png"><br>
-<img class="upslide" src="../images2/hr/hr-event.png"><br>
-</marquee>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#mycarousel-1" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#mycarousel-1" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
 
 
-<div class="col-sm-8 hidden-xs" style="border:1px solid blue;">
-<h2><center>Chief&nbsp;Guest</center></h2>
-<img class="img-responsive" src="../images2/hr/1.jpg" style="max-width:150px; margin:auto;">
-<center>Chief Guest:
-<br>Her Excellency Shaikha Noora Bent Khalifa Al Khalifa
-<br>(National brand ambassador of the International Non-Olympic University)
-<br>(Member of the Board of Directors for Arab Union to protect intellectual property rights)
-<br>(CEO & Chair Woman of Medpoint Design)
-<br>(CEO & Chair Woman of Nine Training Center)
-<br>(CEO & Chair Woman of 8 Printing Press)
-<br>(CEO of Bahrain This Week (Weekly Paper))
-<br>(CEO of Ahil Al Azim (Magazine))
-</center>
- </div>
- <div class="col-xs-6 col-sm-2" style="border:1px solid blue;"><h5>Sponsering Companies</h5>
-<marquee direction="up" height="500px">
-<img class="upslide" src="../images2/hr/hr-event.png"><br>
-<img class="upslide" src="../images2/hr/hr-event.png"><br>
-<img class="upslide" src="../images2/hr/hr-event.png"><br>
-<img class="upslide" src="../images2/hr/hr-event.png"><br>
-<img class="upslide" src="../images2/hr/hr-event.png"><br>
-<img class="upslide" src="../images2/hr/hr-event.png"><br>
-</marquee>
+<div id="mycarousel-3" class="carousel slide contain-partners" data-ride="carousel">
+  <h2><center>Media Partners</center></h2>
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+			<div><img alt="" src="../images2/media/1.jpg" style="height:150px; width:150px;"></div>
+			
+		
+    </div>
+    <div class="item">
+			<div><img alt="" src="../images2/media/1.jpg" style="height:150px; width:150px;"></div>
+			
+    </div>
+    <div class="item">
+			<div><img alt="" src="../images2/media/1.jpg" style="height:150px; width:150px;"></div>
+			
+    </div>
+    <div class="item">
+			<div><img alt="" src="../images2/media/1.jpg" style="height:150px; width:150px;"></div>
+			
+    </div>
+    <div class="item">
+			<div><img alt="" src="../images2/media/1.jpg" style="height:150px; width:150px;"></div>
+			
+
+    </div>
+  </div> 
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#mycarousel-3" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#mycarousel-3" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
 
- 
- </div></div>
- 
- 
+
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
