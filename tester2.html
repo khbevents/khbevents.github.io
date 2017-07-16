@@ -10,73 +10,12 @@
 </head>
 <style>
 /*for full page image view*/
-body, html {
-    height: 100%;
-	padding: 0;
-    margin: 0;
-	border : 1px solid yellow;
-}
-div#div100 {
-    height: 100vh;
-	padding: 0;
-    margin: 0;
-}
+body, html {height: 100%;padding: 0; margin: 0;	border : 1px solid yellow;}
+div#div100 {    height: 99vh;padding: 0; margin: 0;}
+.bg1 {background-image: url(images/business.jpg);height:100%; background-position: center; background-repeat: no-repeat; background-size: cover;}
 
-.bg1 {
-    /* The image used */
-    background-image: url(images/business.jpg);
-    /* Full height */
-    height:100%; 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-.bg2 {
-    /* The image used */
-    background-image: url(images/10.2.jpeg);
-    /* Full height */
-    height:100%; 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.bg3 {
-    /* The image used */
-    background-image: url(images/1.2.jpg);
-    /* Full height */
-    height:100%; 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.bg4 {
-    /* The image used */
-    background-image: url(images/Exhibition.jpg);
-    /* Full height */
-    height:100%; 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.bg5 {
-    /* The image used */
-    background-image: url(images/15.jpg);
-    /* Full height */
-    height:100%; 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-	
+/*left n & right banner*/
 @media screen and (min-width: 992px) {.bannerleft {width:52%; float:left;border : 2px solid green;}}
 @media screen and (min-width: 992px) {.bannerright {width:48%; float:right;border : 2px solid blue;}}
 
@@ -87,23 +26,36 @@ div#div100 {
 
 <body>
 
-  <div class="bannerleft">
-    
-        	<div id="div100" ><div class="bg"></div></div>
+<div class="bannerleft">
+	<div id="mycarousel-1" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner" role="listbox">
+		<div class="item active">
+		<div id="div100" ><div class="bg1"></div></div>
 		<div class="carousel-caption">
-            <h3>First Image</h3>
-        </div>
-   
+		<h3>First Image</h3>
+		</div>
+		</div>
+	</div>
+		<!-- Controls -->
+	  <a class="left carousel-control" href="#mycarousel-1" role="button" data-slide="prev">
+		<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		<span class="sr-only">Previous</span>
+	  </a>
+	  <a class="right carousel-control" href="#mycarousel-1" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		<span class="sr-only">Next</span>
+	  </a>
+	</div>
 
-  </div>
-
-                   
+</div>
 
 
 <div class="bannerright">
 
 <div id="div100" >
-<p>t</p></div>
+
+
+</div>
 
 </div>
 	
