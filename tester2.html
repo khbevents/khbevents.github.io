@@ -21,14 +21,22 @@ div#div100 {    height:calc(100vh - 182px);padding: 0; margin: 0;}
 
 .ratio{
     position:relative;
-    width: 200px;
-    height: 99vh;
+    width: 100%;
+    height: calc(100vh - 182px);
     
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;  
 }
-
+.ratio2{
+    position:relative;
+    width: 100%;
+    height: calc(50vh - 91px);
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;  
+}
 
 </style>
 
@@ -65,16 +73,18 @@ div#div100 {    height:calc(100vh - 182px);padding: 0; margin: 0;}
 <div id="div100" >
 
 <div class="container-fluid" style="width:100%; padding-right: 0px; padding-left: 0px;">
-<div class="row">
+<div class="row" style="margin-right: 0px;margin-left: 0px;">
 
-<div class="col-xs-4" style="padding-right:0px;padding-left:0px;">
+<div class="col-sm-4" style="padding-right:0px;padding-left:0px;">
 <div class="ratio" style="background-image:url('images/d2.jpg')"></div>
 </div>
-<div class="col-xs-4" style="padding-right:0px;padding-left:0px;">
-<div class="ratio" style="background-image:url('images/d3.jpg')"></div>
+<div class="col-sm-4" style="padding-right:0px;padding-left:0px;">
+<div class="ratio" style="background-image:url('images/d1.jpg')"></div>
 </div>
-<div class="col-xs-4" style="padding-right:0px;padding-left:0px;">
-<div class="ratio" style="background-image:url('images/d2.jpg')"></div>
+<div class="col-sm-4" style="padding-right:0px;padding-left:0px;">
+<div class="ratio2" style="background-image:url('images/d3.jpg')"></div>
+<div class="ratio2" style="background-image:url('images/d4.jpg')"></div>
+
 </div>
 
 </div>
