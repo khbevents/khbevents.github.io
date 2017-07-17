@@ -9,16 +9,36 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <style>
+body {padding:0; margin:0;}
+.intro {
+	color: #fff;
+	height: 100vh;
+	background: url('http://www.flabber.nl/sites/default/files/archive/files/i-should-buy-a-boat.jpg') no-repeat center center; 
+	background-size: cover;
 
-.ratio{
-    position:relative;
-    width: 200px;
-    height: 100vh;
-    
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;  
+	&--buttons {
+		position: absolute;
+		bottom: 2em;
+	}
 }
+
+p.hello {
+	margin: 30px;
+}
+
+.page1 {
+	color: #fff;
+	height: 100vh;
+	background: beige;
+}
+
+.page2 {
+	color: #fff;
+	height: 100vh;
+	background: black;
+}
+
+.text-center {padding:1px;}
 
 </style>
 
@@ -27,29 +47,43 @@
 <body>
 
 
+<html>
+	<head>
+		<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<title>My title</title>
+	</head>
 
-<div class="bannerright">
+	<body>
+		<div class="container">
+			<div class="row">
 
-<div id="div100" >
+				<div id="intro" class="intro">
 
-<div class="container-fluid">
-<div class="row">
+					<div class="text-center">
+						<p class="hello">
+							Intro text is coming soon!
+						</p>
+							<div class="col small-col-12 intro--buttons">
+								<p>
+Buttons coming here.
+								</p>
+							</div>
+					</div>
 
-<div class="col-sm-4">
-<div class="ratio" style="background-image:url('images/d2.jpg')"></div>
-</div>
-<div class="col-sm-4">
-<div class="ratio" style="background-image:url('images/d2.jpg')"></div>
-</div>
-<div class="col-sm-4">
-<div class="ratio" style="background-image:url('images/d2.jpg')"></div>
-</div>
+				</div>
 
-</div>
-</div>
+				<div id="page1" class="col col-12 page1">
+					<p>Tekst test</p>
+				</div>
 
-</div>
-</div>
+				<div id="page2" class="col col-12 page2">
+					<p>Tekst test.</p>
+				</div>
+
+			</div>
+		</div>
+	</body>
+</html>
 
 
 

@@ -33,7 +33,7 @@ body {
 
 
 /*for full page image view*/
-body, html {height: 100%;padding: 0; margin: 0;	border : 1px solid yellow;}
+body, html {height: 100%;padding: 0; margin: 0;}
 div#div100 {    height:calc(100vh - 182px);padding: 0; margin: 0;}
 }
 /*pc view nav bar height*/
@@ -52,8 +52,8 @@ a.row { padding: 0px 100px; }
 
 
 /*left n & right banner*/
-@media screen and (min-width: 992px) {.bannerleft {width:52%; float:left;border : 2px solid green;}}
-@media screen and (min-width: 992px) {.bannerright {width:48%; float:right;border : 2px solid blue;}}
+@media screen and (min-width: 992px) {.bannerleft {width:52%; float:left;}}
+@media screen and (min-width: 992px) {.bannerright {width:48%; float:right;}}
 
 .ratio{
     position:relative;
@@ -132,13 +132,13 @@ a.row { padding: 0px 100px; }
 }
 	
 
-footer { background-color: #555; color: white; padding: 15px; }
+footer { background-color: #555; color: white; padding: 10px; }
 
 
 </style>
 
 <body>
-
+ 
 <header>
            
                                     <img src="images2/newlogo.png" height="80">
@@ -153,7 +153,7 @@ footer { background-color: #555; color: white; padding: 15px; }
                                     </div>  
                               
                     </header>
-             
+            
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -250,18 +250,24 @@ footer { background-color: #555; color: white; padding: 15px; }
 <div class="col-sm-4" style="padding-right:0px;padding-left:0px;">
 <div class="ratio2" style="background-image:url('images/d3.jpg')"></div>
 <div class="ratio2" style="background-image:url('images/d4.jpg')"></div>
+<div class="visible-xs" style="padding-bottom:50px;"/>
+</div>
+
+</div>
+
+
 
 </div>
 
 </div>
 </div>
-
-</div>
-</div>
-
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
+<div class="navbar-fixed-bottom">
+<footer class="text-center">
+  <p ><a style="color:white;">© Copyright</a> <a style="color:white;">Privacy Policy</a> <a style="color:grey;">Web Design by msb</a></p>
 </footer>
+</div>
+
+
 
 </body>
 </html>
