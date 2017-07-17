@@ -9,84 +9,299 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <style>
-body {padding:0; margin:0;}
-.intro {
-	color: #fff;
-	height: 100vh;
-	background: url('http://www.flabber.nl/sites/default/files/archive/files/i-should-buy-a-boat.jpg') no-repeat center center; 
-	background-size: cover;
+.navbar-nav {float: none;width: 100%;margin:0 auto;display: block;text-align: center;}
+.navbar-nav > li {display: inline-block;float:none;}
+ 
+.navbar {background: #626262;}
+li .active {background: ;}
+  
+  
+  .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: 
+    background-color: #ee6e12;
+}
+.navbar-inverse { color: ; border-color: #626262; margin:0px; }
 
-	&--buttons {
-		position: absolute;
-		bottom: 2em;
-	}
+body {
+    color: #3f3f3f;
+    font: 300 normal 15px/1.4 Raleway,sans-serif;
+    letter-spacing: .05em;
+}
+.contactheader{float:right; text-transform: uppercase; margin-top:22px; padding-right:40px; }
+.contactnumber{color: #ee6e12;font-weight: 700;font-size: 18px;font-family: Lato,sans-serif;}
+
+
+
+/*for full page image view*/
+body, html {height: 100%;padding: 0; margin: 0;}
+div#div100 {    height:calc(100vh - 182px);padding: 0; margin: 0;}
+}
+/*pc view nav bar height*/
+.navbar-nav>li>a {
+    line-height: 50px;
+}
+/*mobile view nav bar center*/
+.navbar-toggle {
+    margin-top: 20px;
 }
 
-p.hello {
-	margin: 30px;
+div.gallery {    float: left;}
+
+a.row { padding: 0px 100px; }
+
+
+
+/*left n & right banner*/
+@media screen and (min-width: 992px) {.bannerleft {width:52%; float:left;}}
+@media screen and (min-width: 992px) {.bannerright {width:48%; float:right;}}
+
+.ratio{
+    position:relative;
+    width: 100%;
+    height: calc(100vh - 182px);
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;  
+}
+.ratio2{
+    position:relative;
+    width: 100%;
+    height: calc(50vh - 91px);
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;  
 }
 
-.page1 {
-	color: #fff;
-	height: 100vh;
-	background: beige;
+
+
+.bg1 {
+    /* The image used */
+    background-image: url(images/business.jpg);
+    /* Full height */
+    height:100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.page2 {
-	color: #fff;
-	height: 100vh;
-	background: black;
+.bg2 {
+    /* The image used */
+    background-image: url(images/10.2.jpeg);
+    /* Full height */
+    height:100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.text-center {padding:1px;}
+.bg3 {
+    /* The image used */
+    background-image: url(images/1.2.jpg);
+    /* Full height */
+    height:100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg4 {
+    /* The image used */
+    background-image: url(images/Exhibition.jpg);
+    /* Full height */
+    height:100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg5 {
+    /* The image used */
+    background-image: url(images/15.jpg);
+    /* Full height */
+    height:100%; 
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+	
+
+footer { background-color: #555; color: white; padding: 20px; }
+
 
 </style>
 
-
-
 <body>
+ 
+<header>
+           
+                                    <img src="images2/newlogo.png" height="80">
+                            
+                                    <img src="images2/newname.png" height="80">
+                             
+					     
+						
+						            <div class="contactheader hidden-xs">
+                                        <span>Contact Us</span><br>
+                                        <span class="contactnumber">+91 9035 442 525</span>
+                                    </div>  
+                              
+                    </header>
+            
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">about us</a></li>
+        <li><a href="#">events</a></li>
+		<li><a href="#">gallery</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+      
+    </div>
+  </div>
+  
+</nav>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <div class="container-fluid">
+  <div class="row">
+ <div class="col-sm-12">
+ 
+ 
+ 
+ 
+ 
+ <div class="bannerleft">
+	<div id="mycarousel-1" class="carousel slide" data-ride="carousel">
+  
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+        	<div id="div100" ><div class="bg1"></div></div>
+		<div class="carousel-caption">
+            <h3>First Image</h3>
+        </div>
+    </div>
+    <div class="item">
+        
+			<div id="div100" ><div class="bg2"></div></div>
+        <div class="carousel-caption">
+            <h3>Second Image</h3>
+        </div>
+    </div>
+    <div class="item">
+        
+		<div id="div100" ><div class="bg3"></div></div>
+        <div class="carousel-caption">
+            <h3>Third Image</h3>
+        </div>
+    </div>
+    <div class="item">
+        
+		<div id="div100"><div class="bg4"></div></div>
+        <div class="carousel-caption">
+            <h3>Fourth Image</h3>
+        </div>
+    </div>
+    <div class="item">
+        
+		<div id="div100"><div class="bg5"></div></div>
+        <div class="carousel-caption">
+            <h3>Fifth Image</h3>
+        </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#mycarousel-1" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#mycarousel-1" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+</div>
 
 
-<html>
-	<head>
-		<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-		<title>My title</title>
-	</head>
-
-	<body>
-		<div class="container">
-			<div class="row">
-
-				<div id="intro" class="intro">
-
-					<div class="text-center">
-						<p class="hello">
-							Intro text is coming soon!
-						</p>
-							<div class="col small-col-12 intro--buttons">
-								<p>
-Buttons coming here.
-								</p>
-							</div>
-					</div>
-
-				</div>
-
-				<div id="page1" class="col col-12 page1">
-					<p>Tekst test</p>
-				</div>
-
-				<div id="page2" class="col col-12 page2">
-					<p>Tekst test.</p>
-				</div>
-
-			</div>
-		</div>
-	</body>
-</html>
 
 
 
 
-  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="bannerright">
+
+<div id="div100" >
+
+<div class="" style="width:100%; padding-right: 0px; padding-left: 0px;">
+<div class="row" style="margin-right: 0px;margin-left: 0px;">
+
+<div class="col-sm-4" style="padding-right:0px;padding-left:0px;">
+<div class="ratio" style="background-image:url('images/d2.jpg')"></div>
+</div>
+<div class="col-sm-4" style="padding-right:0px;padding-left:0px;">
+<div class="ratio" style="background-image:url('images/d1.jpg')"></div>
+</div>
+<div class="col-sm-4" style="padding-right:0px;padding-left:0px;">
+<div class="ratio2" style="background-image:url('images/d3.jpg')"></div>
+<div class="ratio2" style="background-image:url('images/d4.jpg')"></div>
+<div class="visible-xs" style="padding-bottom:50px;"/>
+</div>
+
+</div>
+
+
+
+</div>
+
+</div>
+</div>
+</div>
+
+ <div class="col-sm-12">
+<div class="">
+<footer class="text-center">
+  <p ><a style="color:white;">© Copyright</a> <a style="color:white;">Privacy Policy</a> <a style="color:grey;">Web Design by msb</a></p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body>
 </html>

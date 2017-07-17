@@ -9,14 +9,19 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <style>
+
+.contactheader{float:right; text-transform: uppercase; margin-top:22px; padding-right:40px; }
+.contactnumber{color: #ee6e12;font-weight: 700;font-size: 18px;font-family: Lato,sans-serif;}
+
+
+/* navigation */
 .navbar-nav {float: none;width: 100%;margin:0 auto;display: block;text-align: center;}
 .navbar-nav > li {display: inline-block;float:none;}
  
 .navbar {background: #626262;}
 li .active {background: ;}
-  
-  
-  .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
     color: 
     background-color: #ee6e12;
 }
@@ -27,23 +32,19 @@ body {
     font: 300 normal 15px/1.4 Raleway,sans-serif;
     letter-spacing: .05em;
 }
-.contactheader{float:right; text-transform: uppercase; margin-top:22px; padding-right:40px; }
-.contactnumber{color: #ee6e12;font-weight: 700;font-size: 18px;font-family: Lato,sans-serif;}
-
 
 
 /*for full page image view*/
 body, html {height: 100%;padding: 0; margin: 0;}
-div#div100 {    height:calc(100vh - 182px);padding: 0; margin: 0;}
+div#div100 {    height:calc(100vh - 162px);padding: 0; margin: 0;}
 }
 /*pc view nav bar height*/
 .navbar-nav>li>a {
     line-height: 50px;
 }
 /*mobile view nav bar center*/
-.navbar-toggle {
-    margin-top: 20px;
-}
+.navbar-toggle { margin-top: 10px;}
+.navbar-inverse .navbar-collapse {border-color: #626262;}
 
 div.gallery {    float: left;}
 
@@ -55,84 +56,27 @@ a.row { padding: 0px 100px; }
 @media screen and (min-width: 992px) {.bannerleft {width:52%; float:left;}}
 @media screen and (min-width: 992px) {.bannerright {width:48%; float:right;}}
 
-.ratio{
-    position:relative;
-    width: 100%;
-    height: calc(100vh - 182px);
-    
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;  
-}
-.ratio2{
-    position:relative;
-    width: 100%;
-    height: calc(50vh - 91px);
-    
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;  
-}
 
+.bg1 { background-image: url(images/business.jpg);
+height:100%; background-position: center;background-repeat: no-repeat;background-size: cover;}
 
+.bg2 {background-image: url(images/10.2.jpeg);
+height:100%;background-position: center;background-repeat: no-repeat;background-size: cover;}
 
-.bg1 {
-    /* The image used */
-    background-image: url(images/business.jpg);
-    /* Full height */
-    height:100%; 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+.bg3 {background-image: url(images/1.2.jpg);
+height:100%; background-position: center;background-repeat: no-repeat;background-size: cover;}
 
-.bg2 {
-    /* The image used */
-    background-image: url(images/10.2.jpeg);
-    /* Full height */
-    height:100%; 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+.bg4 {background-image: url(images/Exhibition.jpg);
+height:100%;background-position: center;background-repeat: no-repeat;background-size: cover;}
 
-.bg3 {
-    /* The image used */
-    background-image: url(images/1.2.jpg);
-    /* Full height */
-    height:100%; 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+.bg5 {background-image: url(images/15.jpg);
+height:100%; background-position: center;background-repeat: no-repeat;background-size: cover;}
 
-.bg4 {
-    /* The image used */
-    background-image: url(images/Exhibition.jpg);
-    /* Full height */
-    height:100%; 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+.ratio{position:relative;width:100%;height:calc(100vh - 162px);background-repeat:no-repeat;background-position:center center;background-size: cover;}
 
-.bg5 {
-    /* The image used */
-    background-image: url(images/15.jpg);
-    /* Full height */
-    height:100%; 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-	
+.ratio2{position:relative;width:100%;height:calc(50vh - 81px);background-repeat:no-repeat;background-position:center center;background-size:cover;}
 
-footer { background-color: #555; color: white; padding: 10px; }
+footer { background-color: #555; color: white; padding: 5px; height:30px; }
 
 
 </style>
@@ -140,20 +84,14 @@ footer { background-color: #555; color: white; padding: 10px; }
 <body>
  
 <header>
-           
-                                    <img src="images2/newlogo.png" height="80">
-                            
-                                    <img src="images2/newname.png" height="80">
-                             
-					     
-						
-						            <div class="contactheader hidden-xs">
-                                        <span>Contact Us</span><br>
-                                        <span class="contactnumber">+91 9035 442 525</span>
-                                    </div>  
-                              
-                    </header>
-            
+<img src="images2/newlogo.png" height="80">
+<img src="images2/newname.png" height="80">
+<div class="contactheader hidden-xs">
+<span>Contact Us</span><br>
+<span class="contactnumber">+91 9035 442 525</span>
+</div>  
+</header>
+
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -167,10 +105,10 @@ footer { background-color: #555; color: white; padding: 10px; }
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">about us</a></li>
-        <li><a href="#">events</a></li>
+        <li><a href="en/about-us.html">about us</a></li>
+        <li><a href="en/events.html">events</a></li>
 		<li><a href="#">gallery</a></li>
-        <li><a href="#">contact</a></li>
+        <li><a href="en/contact.html">contact</a></li>
       </ul>
       
     </div>
@@ -242,15 +180,15 @@ footer { background-color: #555; color: white; padding: 10px; }
 <div class="row" style="margin-right: 0px;margin-left: 0px;">
 
 <div class="col-sm-4" style="padding-right:0px;padding-left:0px;">
+<div class="ratio" style="background-image:url('images/9.jpg')"></div>
+</div>
+<div class="col-sm-4" style="padding-right:0px;padding-left:0px;">
 <div class="ratio" style="background-image:url('images/d2.jpg')"></div>
 </div>
 <div class="col-sm-4" style="padding-right:0px;padding-left:0px;">
-<div class="ratio" style="background-image:url('images/d1.jpg')"></div>
-</div>
-<div class="col-sm-4" style="padding-right:0px;padding-left:0px;">
-<div class="ratio2" style="background-image:url('images/d3.jpg')"></div>
-<div class="ratio2" style="background-image:url('images/d4.jpg')"></div>
-<div class="visible-xs" style="padding-bottom:50px;"/>
+<div class="ratio2" style="background-image:url('images2/gallery/8.jpg')"></div>
+<div class="ratio2" style="background-image:url('assets/frontend/dist/images/slide3-2.jpg')"></div>
+<div class="visible-xs" style="padding-bottom:30px;"/>
 </div>
 
 </div>
