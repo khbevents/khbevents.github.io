@@ -59,13 +59,7 @@ img{
 		display:block;
 		margin:auto;
 		}
-.gallery  {
-    
-    width:25%;
-	height:200px;
-	float:left;
-	margin: ;
-}
+
 @media all and (min-width: 800px){.carousel-inner
 {margin:auto; width:80%; }}
 @media all and (max-width: 800px) 
@@ -75,14 +69,29 @@ img{
 .contain-speaker{width:100%; float:left;}
 .contain-partners{width:25%; margin-left:5%; float:left;}
 }
-@media all and (min-width: 800px){.c2image {height:150px; width:150px; border:1px solid;}}
-@media all and (max-width: 800px){.c2image {height:150px; max-width:100px}}
+
+.gallery  {width:25%;height:250px;float:left;margin: ;}
+.gallerytext{font-size:19px; text-align:center; font-weight: bold;}
+
+@media all and (min-width: 800px){.c2image {height:150px; width:150px; border:1px solid;}
+.gallerytext{font-size:19px; text-align:center; font-weight: bold;}
+}
+@media all and (max-width: 800px){
+.c2image {height:100px; max-width:80px}
+.gallerytext{font-size:14px; text-align:center;}
+}
+
+/* background text theme */
+.bgmaroon{background:maroon; color: #fff;}
+.hrheading{color:white;font-family:Andalus;font-size:60px; text-align:center; font-weight: bold;}
+h5.hrcenter{text-align:center;}
+h4.hrcenter{text-align:center; text-decoration:underline;}
+p.hr{}
+
+
+
 
 </style>
-
-
-
-
 
 
 </head>
@@ -96,7 +105,6 @@ img{
 
         <!-- FLOATING -->
         <!-- social media -->
-        
 		
 		<div id="floatMenu" class="socialMediaWrap">
             <ul class="socialButtonWrap">
@@ -231,19 +239,17 @@ img{
 <img class="img-responsive" src="../images2/hr-event.png" style="margin:auto;">
 </div>
 
-<div style="background:maroon; color: #fff;">
-<div style="text-align:center;">
-<h2 style="color:white;font-family:Andalus;font-size:60px;"><b>National Human Resource Conference – 2017<b></h2> 
-<h5>21st September 2017 @ Radisson Blu Hotel</h5>
-<h5>Kingdom of Bahrain</h5>
-<h4><u>About National HR Conference:</u></h4>
-</div>
-<p>Human Resources dedicates to support the mission of the company by expanding and improving experiences that prepare employees to thrive in a diverse environment.
+<div class="bgmaroon">
+<h2 class="hrheading">National Human Resource Conference – 2017</h2> 
+<h5 class="hrcenter">21st September 2017 @ Radisson Blu Hotel</h5>
+<h5 class="hrcenter">Kingdom of Bahrain</h5>
+<h4 class="hrcenter">About National HR Conference:</h4>
+<p class="hr">Human Resources dedicates to support the mission of the company by expanding and improving experiences that prepare employees to thrive in a diverse environment.
 We are committed to promoting diversity by increasing awareness of and valuing the differences among prospective and current members.
 </p>
-<p>As the Gulf region continues to grow and businesses expand, we are seeing huge competition for new talent and a focus on improvement of individuals, which in turn is putting a spot light on HR departments. Looking globally, the best HR practices are those that develop talent, growth and innovation. Increasingly, therefore, the emphasis is on executing talent, whether it is candidate sourcing, assessment or training, necessary for achieving organisational acceleration and business goals.
+<p class="hr">As the Gulf region continues to grow and businesses expand, we are seeing huge competition for new talent and a focus on improvement of individuals, which in turn is putting a spot light on HR departments. Looking globally, the best HR practices are those that develop talent, growth and innovation. Increasingly, therefore, the emphasis is on executing talent, whether it is candidate sourcing, assessment or training, necessary for achieving organisational acceleration and business goals.
 </p>
-<p>The impact of mega events on human resources, particularly the World Expo 2020 and FIFA World Cup 2022, will further accelerate demand for a more professional approach to people strategies and policies.
+<p class="hr">The impact of mega events on human resources, particularly the World Expo 2020 and FIFA World Cup 2022, will further accelerate demand for a more professional approach to people strategies and policies.
 </p>
 </div>
 
@@ -310,19 +316,19 @@ We are committed to promoting diversity by increasing awareness of and valuing t
   <div class="carousel-inner" role="listbox">
    
 	<div class="item active">
-			<div class="gallery"><img class="c2image" alt="" src="../images2/speaker/1.jpg"><div style="font-size:19px;"><center><b>H.E Shaikha Noora Bent<br> Khalifa Al Khalifa</b></center></div></div>
-			<div class="gallery"><img class="c2image" alt="" src="../images2/speaker/3.jpg"><div style="font-size:19px;"><center><b>Kasthuri Sridhar</b></center></div></div>
-			<div class="gallery"><img class="c2image" alt="" src="../images2/speaker/2.jpg"><div style="font-size:19px;"><center><b>Dr. Suzanne White</b></center></div></div>
-			<div class="gallery"><img class="c2image" alt="" src="../images2/speaker/4.jpg"><div style="font-size:19px;"><center><b>Dr. Clare Beckett</b></center></div></div>
+			<div class="gallery"><img class="c2image" alt="" src="../images2/speaker/1.jpg"><div class="gallerytext">H.E Shaikha Noora Bent Khalifa Al Khalifa</div></div>
+			<div class="gallery"><img class="c2image" alt="" src="../images2/speaker/3.jpg"><div class="gallerytext">Kasthuri Sridhar</b></center></div></div>
+			<div class="gallery"><img class="c2image" alt="" src="../images2/speaker/2.jpg"><div class="gallerytext">Dr. Suzanne White</b></center></div></div>
+			<div class="gallery"><img class="c2image" alt="" src="../images2/speaker/4.jpg"><div class="gallerytext">Dr. Clare Beckett</b></center></div></div>
 
 		
     </div>
    
 	<div class="item">
-			<div class="gallery"><img class="c2image" alt="" src="../images2/speaker/1.jpg"><div style="font-size:19px;"><center><b>H.E Shaikha Noora Bent<br> Khalifa Al Khalifa</b></center></div></div>
-			<div class="gallery"><img class="c2image" alt="" src="../images2/speaker/3.jpg"><div style="font-size:19px;"><center><b>Kasthuri Sridhar</b></center></div></div>
-			<div class="gallery"><img class="c2image" alt="" src="../images2/speaker/2.jpg"><div style="font-size:19px;"><center><b>Dr. Suzanne White</b></center></div></div>
-			<div class="gallery"><img class="c2image" alt="" src="../images2/speaker/4.jpg"><div style="font-size:19px;"><center><b>Dr. Clare Beckett</b></center></div></div>
+			<div class="gallery"><img class="c2image" alt="" src="../images2/speaker/1.jpg"><div class="gallerytext">H.E Shaikha Noora Bent Khalifa Al Khalifa</div></div>
+			<div class="gallery"><img class="c2image" alt="" src="../images2/speaker/3.jpg"><div class="gallerytext">Kasthuri Sridhar</b></center></div></div>
+			<div class="gallery"><img class="c2image" alt="" src="../images2/speaker/2.jpg"><div class="gallerytext">Dr. Suzanne White</b></center></div></div>
+			<div class="gallery"><img class="c2image" alt="" src="../images2/speaker/4.jpg"><div class="gallerytext">Dr. Clare Beckett</b></center></div></div>
 	</div>
  
 	
@@ -393,7 +399,7 @@ We are committed to promoting diversity by increasing awareness of and valuing t
 	<a href="">events</a>&nbsp;|&nbsp;
 	<A href="">contact</a>&nbsp;
 	</b></div>
-	<img src="../images2/newlogo1.png"style="height:100px; width:100%;"</td> 
+	<img src="../images2/newlogo1.png"style="height:100px; width:100%;"></td> 
     
 	<td style="width:33.31%;"><b><center>No.1,3rd Cross,AMC road Bangalore 560045<br>Mobile:+91 9035442545 <br>Email:info@alnajah-events.com<center><b></td>
   </tr>
