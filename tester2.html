@@ -11,7 +11,7 @@
 <style>
 /*for full page image view*/
 body, html {height: 100%;padding: 0; margin: 0;	border : 1px solid yellow;}
-div#div100 {    height: 99vh;padding: 0; margin: 0;}
+div#div100 {    height:calc(100vh - 182px);padding: 0; margin: 0;}
 .bg1 {background-image: url(images/business.jpg);height:100%; background-position: center; background-repeat: no-repeat; background-size: cover;}
 
 
@@ -19,8 +19,15 @@ div#div100 {    height: 99vh;padding: 0; margin: 0;}
 @media screen and (min-width: 992px) {.bannerleft {width:52%; float:left;border : 2px solid green;}}
 @media screen and (min-width: 992px) {.bannerright {width:48%; float:right;border : 2px solid blue;}}
 
-/* background text theme */
-bgmaroon#mystyle1  {background:maroon; color: #fff;} h2#mystyle1{color:white;font-family:Andalus;font-size:60px;}
+.ratio{
+    position:relative;
+    width: 200px;
+    height: 99vh;
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;  
+}
 
 
 </style>
@@ -57,11 +64,25 @@ bgmaroon#mystyle1  {background:maroon; color: #fff;} h2#mystyle1{color:white;fon
 
 <div id="div100" >
 
+<div class="container-fluid" style="width:100%; padding-right: 0px; padding-left: 0px;">
+<div class="row">
 
-
+<div class="col-xs-4" style="padding-right:0px;padding-left:0px;">
+<div class="ratio" style="background-image:url('images/d2.jpg')"></div>
+</div>
+<div class="col-xs-4" style="padding-right:0px;padding-left:0px;">
+<div class="ratio" style="background-image:url('images/d3.jpg')"></div>
+</div>
+<div class="col-xs-4" style="padding-right:0px;padding-left:0px;">
+<div class="ratio" style="background-image:url('images/d2.jpg')"></div>
 </div>
 
 </div>
+</div>
+
+</div>
+</div>
+
 
 
 
