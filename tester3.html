@@ -1,37 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <title>Al Najah International</title>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-
-
 <style>
 
+.contactheader{float:right; text-transform: uppercase; margin-top:22px; padding-right:40px; }
+.contactnumber{color: #ee6e12;font-weight: 700;font-size: 18px;font-family: Lato,sans-serif;}
+
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+    > li {
+      float: none;
+      display: inline-block;
+    }
+  }
 
 
 </style>
 
-
-
-
 <body>
+ 
+<header>
+<img src="images2/newlogo.png" height="80">
+<img src="images2/newname.png" height="80">
+<div class="contactheader hidden-xs">
+<span>Contact Us</span><br>
+<span class="contactnumber">+91 9035 442 525</span>
+</div>  
+</header>
 
-<div class="container visible-xs">
-  <h2>Simple Collapsible</h2>
-  <p>Click on the button to toggle between showing and hiding content.</p>
-  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#myNavbar">Simple collapsible</button>
-  <div id="demo" class="collapse">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  </div>
-</div>
+<div class="btn" style="border:1px solid blue; ">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+<button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
 
 <nav class="navbar navbar-inverse">
-  <div class="container-fluid hidden-xs">
+  <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
         <span class="icon-bar"></span>
@@ -53,6 +73,8 @@
   </div>
   
 </nav>
+ 
+
 
 
 
