@@ -41,16 +41,16 @@ div.gallery {    float: left;}
 @media screen and (min-width: 992px) {.bannerright {width:48%; float:right;}}
 
 
-.bg1 { background-image: url(images/business.jpg);
+.bg1 { background-image: url(assets/uploads/banners/5.jpg);
 height:100%; background-position: center;background-repeat: no-repeat;background-size: cover;}
 
-.bg2 {background-image: url(images/10.2.jpeg);
+.bg2 {background-image: url(assets/uploads/banners/11.jpg);
 height:100%;background-position: center;background-repeat: no-repeat;background-size: cover;}
 
-.bg3 {background-image: url(images/1.2.jpg);
+.bg3 {background-image: url(assets/uploads/banners/12.jpg);
 height:100%; background-position: center;background-repeat: no-repeat;background-size: cover;}
 
-.bg4 {background-image: url(images/Exhibition.jpg);
+.bg4 {background-image: url(assets/uploads/banners/11.jpg);
 height:100%;background-position: center;background-repeat: no-repeat;background-size: cover;}
 
 .bg5 {background-image: url(images/15.jpg);
@@ -75,6 +75,56 @@ footer { background-color: #555; color: white; padding: 5px; height:25px; }
 padding-top: 12px ; text-align:center; color:white; font-size:20px;}
 .bannerclick{height:100%;width:100%;}
 .bannerclick:hover{ background-color:rgba(255, 0, 0, 0.6);}
+
+/* animated button */
+#btn {  position: absolute;width: 30px;height: 30px;top: 8%;left: 95%;transform: translate(-50%, -50%);cursor: pointer;background: white;
+  border-radius: 50%;border: none;outline: none;}
+#btn span {position: absolute;width: 50px;height: 4px;top: 50%;left: 50%;background: #262626;border-radius: 2px;overflow: hidden;
+  transition: all 0.3s linear;}
+#btn span::before {content: "";position: absolute;width: 0;height: 100%;top: 0;right: 0;background: gray;transition: all 0.3s linear;}
+#btn span:nth-child(1) {animation: span-first-off 0.5s ease-in-out;animation-fill-mode: forwards;}
+#btn span:nth-child(2) {animation: span-second-off 0.5s ease-in-out;animation-fill-mode: forwards;}
+#btn span:nth-child(3) {animation: span-third-off 0.5s ease-in-out;animation-fill-mode: forwards;}
+
+#btn.on:hover span::before {width: 100%;transition: all 0.3s linear;}
+#btn.on span:nth-child(1) {animation: span-first-on 0.5s ease-in-out;animation-fill-mode: forwards;}
+#btn.on span:nth-child(2) {animation: span-second-on 0.5s ease-in-out;animation-fill-mode: forwards;}
+#btn.on span:nth-child(3) {animation: span-third-on 0.5s ease-in-out;animation-fill-mode: forwards;}
+
+@keyframes span-first-on {
+  0% { transform: translate(-50%, -300%); }
+  30% { transform: translate(-50%, -50%);  }
+  100% { transform: translate(-50%, -50%) rotate(-45deg); }
+}
+@keyframes span-first-off {
+  0% { transform: translate(-50%, -50%) rotate(-45deg); }
+  30% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -300%); }
+}
+@keyframes span-second-on {
+  0% { transform: translate(-50%, -50%); }
+  25% { background: gray; }
+  50% { transform: translate(-50%, -50%) scale(1); }
+  100% { transform: translate(-150%, -50%) scale(0); }
+}
+@keyframes span-second-off {
+  0% {transform: translate(-150%, -50%) scale(0); }
+  25% { background: gray;}
+  50% {transform: translate(-50%, -50%) scale(1);}
+  100% { transform: translate(-50%, -50%); }
+}
+@keyframes span-third-on {
+  0% { transform: translate(-50%, 200%); }
+  30% { transform: translate(-50%, -50%); }
+  100% { transform: translate(-50%, -50%) rotate(45deg); }
+}
+@keyframes span-third-off {
+  0% { transform: translate(-50%, -50%) rotate(45deg);  }
+  30% {  transform: translate(-50%, -50%) rotate(0deg);  }
+  100% {  transform: translate(-50%, 200%); }
+}
+
+
 </style>
 
 <body>
@@ -84,11 +134,13 @@ padding-top: 12px ; text-align:center; color:white; font-size:20px;}
 <img src="images2/newname.png" height="80">
 <div class="contactheader hidden-xs">
 <span>Contact Us</span><br>
-<span class="contactnumber">+91 9035 442 525</span>
+<span class="contactnumber">+91 9035 442 545</span>
 </div>
 
 <div class="visible-xs" style="float:right; margin-right:10px; margin-top:20px;">
-<button type="button" class="btn btn-warning" data-toggle="collapse" data-target="#myNavbar">Menu</button>
+<button id="btn" data-toggle="collapse" data-target="#myNavbar">
+<span></span><span></span><span></span>
+</button>
 </div>
 </header>
 
@@ -216,6 +268,12 @@ padding-top: 12px ; text-align:center; color:white; font-size:20px;}
 </div>
 
 
-
+<script>
+	var e = document.getElementById('btn');
+e.addEventListener('click', function() {
+  if (this.className == 'on') this.classList.remove('on');
+  else this.classList.add('on');
+});
+	</script>
 </body>
 </html>
