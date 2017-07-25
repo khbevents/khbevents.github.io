@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Al Najah International</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="http://pearlwhite.tk/purecss.css">
+</head>
+<style>
+
+body {margin:0;}
+
+.contactheader{float:right; text-transform: uppercase; margin-top:22px; padding-right:40px; }
+.contactnumber{color: #ee6e12;font-weight: 700;font-size: 18px;font-family: Lato,sans-serif;}
+
+
+/* navigation */
+nav.navbar {width:100%; Height:100px;border:1px solid;background-color:#626262;overflow:hidden;}
+ul.navbarmenu{list-style-type: none;margin: auto; padding: 50px 0;}
+li {display: inline;}
+
+
+
+/* animated button */
+#btn {  position: absolute;width: 30px;height: 30px;
+
+top: 7%;left:90%;
+
+transform: translate(-50%, -50%);cursor: pointer;background: white;
+  border-radius: 50%;border: none;outline: none;}
+#btn span {position: absolute;width: 50px;height: 4px;top: 50%;left: 50%;background: #262626;border-radius: 2px;overflow: hidden;
+  transition: all 0.3s linear;}
+#btn span::before {content: "";position: absolute;width: 0;height: 100%;top: 0;right: 0;background: gray;transition: all 0.3s linear;}
+#btn span:nth-child(1) {animation: span-first-off 0.5s ease-in-out;animation-fill-mode: forwards;}
+#btn span:nth-child(2) {animation: span-second-off 0.5s ease-in-out;animation-fill-mode: forwards;}
+#btn span:nth-child(3) {animation: span-third-off 0.5s ease-in-out;animation-fill-mode: forwards;}
+
+#btn.on:hover span::before {width: 100%;transition: all 0.3s linear;}
+#btn.on span:nth-child(1) {animation: span-first-on 0.5s ease-in-out;animation-fill-mode: forwards;}
+#btn.on span:nth-child(2) {animation: span-second-on 0.5s ease-in-out;animation-fill-mode: forwards;}
+#btn.on span:nth-child(3) {animation: span-third-on 0.5s ease-in-out;animation-fill-mode: forwards;}
+
+@keyframes span-first-on {
+  0% { transform: translate(-50%, -300%); }
+  30% { transform: translate(-50%, -50%);  }
+  100% { transform: translate(-50%, -50%) rotate(-45deg); }
+}
+@keyframes span-first-off {
+  0% { transform: translate(-50%, -50%) rotate(-45deg); }
+  30% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -300%); }
+}
+@keyframes span-second-on {
+  0% { transform: translate(-50%, -50%); }
+  25% { background: gray; }
+  50% { transform: translate(-50%, -50%) scale(1); }
+  100% { transform: translate(-150%, -50%) scale(0); }
+}
+@keyframes span-second-off {
+  0% {transform: translate(-150%, -50%) scale(0); }
+  25% { background: gray;}
+  50% {transform: translate(-50%, -50%) scale(1);}
+  100% { transform: translate(-50%, -50%); }
+}
+@keyframes span-third-on {
+  0% { transform: translate(-50%, 200%); }
+  30% { transform: translate(-50%, -50%); }
+  100% { transform: translate(-50%, -50%) rotate(45deg); }
+}
+@keyframes span-third-off {
+  0% { transform: translate(-50%, -50%) rotate(45deg);  }
+  30% {  transform: translate(-50%, -50%) rotate(0deg);  }
+  100% {  transform: translate(-50%, 200%); }
+}
+
+
+
+
+
+</style>
+
+<body>
+ 
+<header>
+<img src="images2/newlogo.png" height="80">
+<img src="images2/newname.png" height="80">
+<div class="contactheader hidden-xs">
+<span>Contact Us</span><br>
+<span class="contactnumber">+91 9035 442 545</span>
+</div>
+
+<div class="xs-visible" style="float:right; margin-right:10px; margin-top:20px;">
+<button id="btn" data-toggle="collapse" data-target="#myNavbar">
+<span></span><span></span><span></span>
+</button>
+</div>
+</header>
+
+<nav class="navbar">
+<ul class="navbarmenu">
+	<li>Home</li>
+	<li>About-us</li>
+	<li>Events</li>
+	<li>Gallery</li>
+	<li>Contact</li>
+</ul>
+
+</nav>
+<!--      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="en/about-us.html">about us</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Events<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="en/hr.html">National Human <br>Resources <br>Conference - 2017</a></li>
+          <li><a href="#">Power Summit - <br>Sultanate of Oman</a></li>
+          <li><a href="en/events.html"><b>UPCOMING EVENTS</b></a></li>
+        </ul>
+      </li>
+		
+		
+		<li><a href="#">gallery</a></li>
+        <li><a href="en/contact.html">contact</a></li>
+      </ul>
+-->
+
+  
+
+ 
+ 
+
+
+
+<script>
+	var e = document.getElementById('btn');
+e.addEventListener('click', function() {
+  if (this.className == 'on') this.classList.remove('on');
+  else this.classList.add('on');
+});
+	</script>
+</body>
+</html>
