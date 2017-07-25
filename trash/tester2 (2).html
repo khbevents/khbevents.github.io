@@ -5,14 +5,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="http://pearlwhite.tk/purecss.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
 </head>
 <style>
 /*for full page image view*/
 body, html {height: 100%;padding: 0; margin: 0;	border : 1px solid yellow;}
 div#div100 {    height:calc(100vh - 182px);padding: 0; margin: 0;}
-.bg1 {background-image: url(images/business.jpg);height:100%; background-position: center; background-repeat: no-repeat; background-size: cover;}
+.bg1 {background-image: url(../images/business.jpg);height:100%; background-position: center; background-repeat: no-repeat; background-size: cover;}
+.bg2 {background-image: url(../assets/uploads/banners/11.jpg);
+height:100%;background-position: center;background-repeat: no-repeat;background-size: cover;}
 
+.bg3 {background-image: url(../assets/uploads/banners/12.jpg);
+height:100%; background-position: center;background-repeat: no-repeat;background-size: cover;}
 
 /*left n & right banner*/
 @media screen and (min-width: 992px) {.bannerleft {width:52%; float:left;border : 2px solid green;}}
@@ -38,9 +45,6 @@ div#div100 {    height:calc(100vh - 182px);padding: 0; margin: 0;}
 }
 
 
-* {box-sizing:border-box}
-body {font-family: Verdana,sans-serif;}
-.mySlides {display:none}
 
 /* Slideshow container */
 .slideshow-container {
@@ -85,27 +89,36 @@ body {font-family: Verdana,sans-serif;}
 }
 
 /* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+.fades {
+  -webkit-transition:opacity 2000ms ease-in-out;
+  -moz-transition:opacity 2000ms ease-in-out;
+  -o-transition:opacity 2000ms ease-in-out;
+  transition:opacity 2000ms ease-in-out;
+  }
+
+@-webkit-keyframes fades {
+  -webkit-transition:opacity 2000ms ease-in-out;
+  -moz-transition:opacity 2000ms ease-in-out;
+  -o-transition:opacity 2000ms ease-in-out;
+  transition:opacity 2000ms ease-in-out;
+  
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+@keyframes fades {
+  -webkit-transition:opacity 2000ms ease-in-out;
+  -moz-transition:opacity 2000ms ease-in-out;
+  -o-transition:opacity 2000ms ease-in-out;
+  transition:opacity 2000ms ease-in-out;
+  
 }
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+-webkit-transition:opacity 2000ms ease-in-out;
+
 </style>
 
 
@@ -115,62 +128,38 @@ body {font-family: Verdana,sans-serif;}
 <div class="bannerleft">
 	<div class="slideshow-container">
 
-<div class="mySlides fade">
+<div class="mySlides fades">
   <div class="numbertext">1 / 3</div>
-  <img src="../assets/uploads/banners/5.jpg" style="width:100%">
-  <div class="text">Caption Text</div>
+  <div id="div100" ><div class="bg1"></div></div>
+  <div class="text"></div>
 </div>
 
-<div class="mySlides fade">
+<div class="mySlides fades">
   <div class="numbertext">2 / 3</div>
-  <img src="../assets/uploads/banners/5.jpg" style="width:100%">
-  <div class="text">Caption Two</div>
+  <div id="div100" ><div class="bg2"></div></div>
+  <div class="text"></div>
 </div>
 
-<div class="mySlides fade">
+<div class="mySlides fades">
   <div class="numbertext">3 / 3</div>
-  <img src="../assets/uploads/banners/5.jpg" style="width:100%">
-  <div class="text">Caption Three</div>
+  <div id="div100" ><div class="bg3"></div></div>
+  <div class="text"></div>
 </div>
 
 </div>
-<br>
 
-<div style="text-align:center">
+
+<div style="text-align:center;margin-top:-25px;border:">
   <span class="dot"></span> 
   <span class="dot"></span> 
   <span class="dot"></span> 
 </div>
-<br>
 
 
-</div>
-
-
-<div class="bannerright">
-
-<div id="div100" >
-
-<div class="container" style="width:100%; padding-right: 0px; padding-left: 0px;">
-<div class="row" style="margin-right: 0px;margin-left: 0px;">
-
-<div class="col-sm-4" style="padding:0px;">
-<div class="ratio" style="background-image:url('../images/d2.jpg')"></div>
-</div>
-<div class="col-sm-4" style="padding:0px;">
-<div class="ratio" style="background-image:url('../images/d1.jpg')"></div>
-</div>
-<div class="col-sm-4" style="padding:0px;">
-<div class="ratio2" style="background-image:url('../images/d3.jpg')"></div>
-<div class="ratio2" style="background-image:url('../images/d4.jpg')"></div>
 
 </div>
 
-</div>
-</div>
 
-</div>
-</div>
 
 
 <script>
