@@ -8,26 +8,31 @@
 </head>
 <style>
 
-body {margin:0;}
+body {margin:0;font-family: "Lato", sans-serif;}
 
 .contactheader{float:right; text-transform: uppercase; margin-top:22px; padding-right:40px; }
 .contactnumber{color: #ee6e12;font-weight: 700;font-size: 18px;font-family: Lato,sans-serif;}
 
 
 /* navigation */
-nav.navbar {width:100%; Height:100px;border:1px solid;background-color:#626262;overflow:hidden;}
-ul.navbarmenu{list-style-type: none;margin: auto; padding: 50px 0;}
-li {display: inline;}
 
+.nav {max-width:600px; margin:auto;}
+ul {list-style-type: none;display:block; margin:auto; padding:0; overflow:;background-color:#626262;border:1px solid;}
+li { display:inline-block; margin:auto;}
+li a {display: block;color: white;text-align: center;padding: 14px 16px;text-decoration: none;}
+li a:hover {background-color:orange;}
 
+ 
 
 /* animated button */
 #btn {  position: absolute;width: 30px;height: 30px;
-
 top: 7%;left:90%;
+transform: translate(-50%, -50%);
+cursor: pointer;background: white;
+border-radius: 50%;
+border: none;
+outline: none;}
 
-transform: translate(-50%, -50%);cursor: pointer;background: white;
-  border-radius: 50%;border: none;outline: none;}
 #btn span {position: absolute;width: 50px;height: 4px;top: 50%;left: 50%;background: #262626;border-radius: 2px;overflow: hidden;
   transition: all 0.3s linear;}
 #btn span::before {content: "";position: absolute;width: 0;height: 100%;top: 0;right: 0;background: gray;transition: all 0.3s linear;}
@@ -84,7 +89,7 @@ transform: translate(-50%, -50%);cursor: pointer;background: white;
 <header>
 <img src="images2/newlogo.png" height="80">
 <img src="images2/newname.png" height="80">
-<div class="contactheader hidden-xs">
+<div class="contactheader xs-hidden">
 <span>Contact Us</span><br>
 <span class="contactnumber">+91 9035 442 545</span>
 </div>
@@ -96,16 +101,18 @@ transform: translate(-50%, -50%);cursor: pointer;background: white;
 </div>
 </header>
 
-<nav class="navbar">
-<ul class="navbarmenu">
-	<li>Home</li>
-	<li>About-us</li>
-	<li>Events</li>
-	<li>Gallery</li>
-	<li>Contact</li>
-</ul>
 
-</nav>
+<ul>
+	<div class="nav">
+	<li><a href="">Home</a></li>
+	<li><a href="">About-us</a></li>
+	<li><a href="">Events</a></li>
+	<li><a href="">Gallery</a></li>
+	<li><a href="">Contact</a></li>
+</div>
+</ul>
+	
+
 <!--      <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="en/about-us.html">about us</a></li>
