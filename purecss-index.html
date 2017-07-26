@@ -16,6 +16,7 @@ body {margin:0;font-family: "Lato", sans-serif;}
 
 /* navigation */
 
+
 /* .nav {width:100%;position: relative;}
 /* ul {list-style-type: none;float:none;display:inline-block;position: static; margin:auto; padding:0; overflow:;background-color:#626262;border:1px solid;}
 /* li { display:block; margin:auto;float:left;    position: relative;}
@@ -24,6 +25,30 @@ body {margin:0;font-family: "Lato", sans-serif;}
 /* li a:hover {background-color:orange;}
 
  
+
+/* .nav {max-width:600px; margin:auto;} */
+/* ul {list-style-type: none;display:block; margin:auto; padding:0; overflow:;background-color:#626262;border:1px solid;} */
+/* li { display:inline-block; margin:auto;} */
+/* li a {display: block;color: white;text-align: center;padding: 14px 16px;text-decoration: none;} */
+/* li a:hover {background-color:orange;} */
+
+/* without hover drop */
+/* .nav{list-style:none;margin:0;padding:0;text-align:center;background-color:#626262;} */
+/* .nav li{display:inline;} */
+/* .nav a{display:inline-block;padding:10px;color: white;text-decoration: none;} */
+/* .nav li a:hover {background-color:orange;} */
+
+.nav{list-style:none;margin:0;padding:0;text-align:center;background-color:#626262;}
+.nav li{position:relative;display:inline;}
+.nav a{display:inline-block;padding:10px;}
+.nav ul{position:absolute;left:-9999px;margin:0;padding:0;text-align:left;}
+.nav ul li{display:block;}
+.nav li:hover ul{left:0;}
+.nav li:hover a{text-decoration:underline;background:#f1f1f1;}
+.nav li:hover ul a{text-decoration:none;background:none;}
+.nav li:hover ul a:hover{text-decoration:underline;background:#f1f1f1;}
+.nav ul a{white-space:nowrap;display:block;border-bottom:1px solid #ccc;}
+
 
 /* animated button */
 #btn {  position: absolute;width: 30px;height: 30px;
@@ -102,17 +127,27 @@ outline: none;}
 </div>
 </header>
 
-	<div class="nav">
-<ul>
+
+
+<ul class="nav xs-hidden">
+	
 
 	<li><a href="">Home</a></li>
 	<li><a href="">About-us</a></li>
-	<li><a href="">Events</a></li>
+	
+	<li>
+	<a href="">Events</a>
+		<ul>
+		<li><a href="#">About me</a></li>
+		<li><a href="#">About my work</a></li>
+		</ul>
+	</li>
+	
 	<li><a href="">Gallery</a></li>
 	<li><a href="">Contact</a></li>
 
 </ul>
-	</div>
+	
 
 <!--      <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
