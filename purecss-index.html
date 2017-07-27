@@ -13,43 +13,6 @@ body {margin:0;font-family: "Lato", sans-serif;}
 .contactheader{float:right; text-transform: uppercase; margin-top:22px; padding-right:40px; }
 .contactnumber{color: #ee6e12;font-weight: 700;font-size: 18px;font-family: Lato,sans-serif;}
 
-
-/* navigation */
-
-
-/* .nav {width:100%;position: relative;}
-/* ul {list-style-type: none;float:none;display:inline-block;position: static; margin:auto; padding:0; overflow:;background-color:#626262;border:1px solid;}
-/* li { display:block; margin:auto;float:left;    position: relative;}
-
-/* li a {display: block;color: white;text-align: center;padding: 14px 16px;text-decoration: none;}
-/* li a:hover {background-color:orange;}
-
- 
-
-/* .nav {max-width:600px; margin:auto;} */
-/* ul {list-style-type: none;display:block; margin:auto; padding:0; overflow:;background-color:#626262;border:1px solid;} */
-/* li { display:inline-block; margin:auto;} */
-/* li a {display: block;color: white;text-align: center;padding: 14px 16px;text-decoration: none;} */
-/* li a:hover {background-color:orange;} */
-
-/* without hover drop */
-/* .nav{list-style:none;margin:0;padding:0;text-align:center;background-color:#626262;} */
-/* .nav li{display:inline;} */
-/* .nav a{display:inline-block;padding:10px;color: white;text-decoration: none;} */
-/* .nav li a:hover {background-color:orange;} */
-
-.nav {list-style:none;margin:0;padding:0;text-align:center;background-color:#626262;}
-.nav li{position:relative;display:inline;}
-.nav a {display:inline-block;padding:10px;color:white;text-decoration: none;}
-.nav ul {position:absolute;left:-9999px;margin:0;padding:0;text-align:left;background-color:#626262;}
-.nav ul li{display:block;}
-.nav li:hover ul{left:0;}
-.nav li:hover a{background-color:orange;}
-.nav li:hover ul a{background-color:orange;}
-.nav li:hover ul a:hover{background-color:red;}
-.nav ul a{white-space:nowrap;display:block;border-bottom:1px solid;text-decoration:none;}
-
-
 /* animated button */
 #btn {  position: absolute;width: 30px;height: 30px;
 top: 7%;left:90%;
@@ -104,9 +67,85 @@ outline: none;}
   100% {  transform: translate(-50%, 200%); }
 }
 
+/* navigation */
+.nav {list-style:none;margin:0;padding:0;text-align:center;background-color:#626262;}
+.nav li{position:relative;display:inline;}
+.nav a {display:inline-block;padding:10px;color:white;text-decoration: none;}
+.nav ul {position:absolute;left:-9999px;margin:0;padding:0;text-align:left;background-color:#626262;}
+.nav ul li{display:block;}
+.nav li:hover ul{left:0;z-index:1;}
+.nav li:hover a{background-color:#ee6e12;}
+.nav li:hover ul a{background-color:#ee6e12;}
+.nav li:hover ul a:hover{background-color:red;}
+.nav ul a{white-space:nowrap;display:block;border-bottom:1px solid;text-decoration:none;}
+
+/* for full page image view */
+body, html {height: 100%;padding: 0; margin: 0;}
+@media screen and (min-height: 500px){div#div100 {    height:calc(100vh - 140px);padding: 0; margin: 0;}}
+@media screen and (max-height: 500px){div#div100 {    height:360px;padding: 0; margin: 0;}}
+
+/* left n & right banner */
+@media screen and (min-width: 992px) {.bannerleft {width:52%; float:left;height:calc(100vh - 140px);}}
+@media screen and (min-width: 992px) {.bannerright {width:48%; float:right;height:calc(100vh - 140px);}}
+@media screen and (max-width: 992px).bannercontainer{height:calc(100vh - 140px);}
+@media screen and (min-width: 992px).bannercontainer{height:calc(200vh - 280px);}
+@media screen and (min-width: 768px).bannercontainer{}
+
+.bg1 { background-image: url(assets/uploads/banners/5.jpg);
+height:100%; background-position: center;background-repeat: no-repeat;background-size: cover;}
+
+.bg2 {background-image: url(assets/uploads/banners/11.jpg);
+height:100%;background-position: center;background-repeat: no-repeat;background-size: cover;}
+
+.bg3 {background-image: url(assets/uploads/banners/12.jpg);
+height:100%; background-position: center;background-repeat: no-repeat;background-size: cover;}
+
+.bg4 {background-image: url(assets/uploads/banners/11.jpg);
+height:100%;background-position: center;background-repeat: no-repeat;background-size: cover;}
+
+.bg5 {background-image: url(images/15.jpg);
+height:100%; background-position: center;background-repeat: no-repeat;background-size: cover;}
 
 
+@media screen and (min-height: 500px)
+{
+.ratio{position:relative;width:100%;height:calc(100vh - 140px);background-repeat:no-repeat;background-position:center center;background-size: cover;}
+.ratio2{position:relative;width:100%;height:calc(50vh - 70px);background-repeat:no-repeat;background-position:center center;background-size:cover;}
+}
+@media screen and (max-height: 500px)
+{
+.ratio{position:relative;width:100%;height:360px;background-repeat:no-repeat;background-position:center center;background-size: cover;}
+.ratio2{position:relative;width:100%;height:180px;background-repeat:no-repeat;background-position:center center;background-size:cover;}
+}
+@media screen and (max-width: 768px){.ratio{height:calc(50vh - 71px);}}
 
+footer { background-color: #555; color: white; padding: 5px;   }
+
+.bannerlabel{width:100%; height:50px; background-color:rgba(255, 0, 0, 0.6); position:absolute; bottom:0;
+padding-top: 12px ; text-align:center; color:white; font-size:20px;}
+.bannerclick{height:100%;width:100%;}
+.bannerclick:hover{ background-color:rgba(255, 0, 0, 0.6);}
+
+/* Fading animation */
+.fades {
+	background-color:black;
+  -webkit-animation-name: fades;
+  -webkit-animation-duration: 4s;
+  animation-name: fades;
+  animation-duration: 4s;
+}
+
+@-webkit-keyframes fades {
+  from {opacity: .7} 
+  to {opacity: 1}
+}
+
+@keyframes fades {
+  from {opacity: .7} 
+  to {opacity: 1}
+}
+
+.bottomfooter {background-color:grey;width:100%;}
 
 </style>
 
@@ -132,40 +171,90 @@ outline: none;}
 <ul class="nav xs-hidden">
 	
 
-	<li><a href="">Home</a></li>
-	<li><a href="">About-us</a></li>
+	<li><a href="#">Home</a></li>
+	<li><a href="#">About-us</a></li>
 	
 	<li>
-	<a href="">Events</a>
+	<a href="#">Events</a>
 		<ul>
-		<li><a href="#">About me</a></li>
-		<li><a href="#">About my work</a></li>
+		<li><a href="#">National Human <br>Resources <br>Conference - 2017</a></li>
+		<li><a href="#">Power Summit - <br>Sultanate of Oman</a></li>
+		<li><a href="#">UPCOMING EVENTS</a></li>
 		</ul>
 	</li>
 	
-	<li><a href="">Gallery</a></li>
-	<li><a href="">Contact</a></li>
+	<li><a href="#">Gallery</a></li>
+	<li><a href="#">Contact</a></li>
 
 </ul>
-	
 
-<!--      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="en/about-us.html">about us</a></li>
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Events<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="en/hr.html">National Human <br>Resources <br>Conference - 2017</a></li>
-          <li><a href="#">Power Summit - <br>Sultanate of Oman</a></li>
-          <li><a href="en/events.html"><b>UPCOMING EVENTS</b></a></li>
-        </ul>
-      </li>
-		
-		
-		<li><a href="#">gallery</a></li>
-        <li><a href="en/contact.html">contact</a></li>
-      </ul>
--->
+<div class="bannercontainer">
 
+<div class="bannerleft">
+		
+
+<div class="mySlides fades">
+  
+  <div id="div100" ><div class="bg1"></div></div>
+  
+</div>
+
+<div class="mySlides fades">
+  
+  <div id="div100" ><div class="bg2"></div></div>
+  
+</div>
+
+<div class="mySlides fades">
+  
+  <div id="div100" ><div class="bg3"></div></div>
+  
+</div>
+
+<div style="text-align:center;margin-top:-25px;border:">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+</div>
+
+
+<div class="bannerright">
+<div id="div100" >
+<div class="row" style="margin-right: 0px;margin-left: 0px;">
+
+<div class="col-sm-4" style="padding:0px;">
+<div class="ratio" style="background-image:url('images/9.jpg')">
+	<a class="bannerhover" href="en/about-us.html"><div class="bannerclick"><div class="bannerlabel">About-us</div></div></a>
+</div>
+</div>
+
+<div class="col-sm-4" style="padding:0px;">
+<div class="ratio" style="background-image:url('images/d2.jpg')">
+	<a class="bannerhover" href="en/events.html"><div class="bannerclick"><div class="bannerlabel">Events</div></div></a>
+</div>
+</div>
+
+<div class="col-sm-4" style="padding:0px;">
+<div class="ratio2" style="background-image:url('images2/gallery/8.jpg')">
+	<a class="bannerhover" href="#"><div class="bannerclick"><div class="bannerlabel">Gallery</div></div></a>
+</div>
+<div class="ratio2" style="background-image:url('assets/frontend/dist/images/slide3-2.jpg')">
+	<a class="bannerhover" href="en/contact.html"><div class="bannerclick"><div class="bannerlabel">Contact</div></div></a>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="bottomfooter">
+
+sdafsdjkfhalkjdfhnaskjndfksajdbndfcksj
+
+</div>
   
 
 
@@ -176,6 +265,27 @@ e.addEventListener('click', function() {
   if (this.className == 'on') this.classList.remove('on');
   else this.classList.add('on');
 });
+
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
 	</script>
 </body>
 </html>
