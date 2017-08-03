@@ -4,7 +4,7 @@
   <title>Al Najah International</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href="http://pearlwhite.tk/purecss.css">
+ <link rel="stylesheet" href="purecss.css">
 
 <style>
 
@@ -13,49 +13,18 @@ body {margin:0;font-family: "Lato", sans-serif;}
 .contactheader{float:right; text-transform: uppercase; margin-top:22px; padding-right:40px; }
 .contactnumber{color: #ee6e12;font-weight: 700;font-size: 18px;font-family: Lato,sans-serif;}
 
-.menu{
-border:1px solid;
-height:22px;
-width:50px;
-}
-.linebar {
-border-radius: 2px;
-height:4px;
-width:50px;
-background-color:#ee6e12;
-}
-.linebar:nth-child(1) {
-margin-bottom:5px;
-transition: .5s;
-}
-.linebar:nth-child(2) {
-margin-bottom:5px;
-transition: .5s;
-}
-.linebar:nth-child(3) {
-transition: .5s;
-}
-.menuon{
-height:30px;
-border:1px solid;
-width:40px;
-}
-.menuon>.linebar {
-margin-left:-5px;
-margin-right:-10px;
-}
-.menuon>.linebar:nth-child(1) {
-transform: rotate(130deg);
-margin-top:13px;
-margin-bottom:-5px;
-}
-.menuon>.linebar:nth-child(2) {
-opacity: 0;
-}
-.menuon>.linebar:nth-child(3) {
-transform: rotate(-130deg);
-margin-top:-8px;
-}
+/* menubar */
+.menuholder{width:50px;height:30px;float:right;margin:25px 15px 0 0;}
+.menu{height:22px;width:50px;}
+.linebar {border-radius: 2px;height:4px;width:50px;background-color:#ee6e12;}
+.linebar:nth-child(1) {margin-bottom:5px;transition: .5s;}
+.linebar:nth-child(2) {margin-bottom:5px;transition: .5s;}
+.linebar:nth-child(3) {transition: .5s;}
+.menuon{height:30px;width:40px;}
+.menuon>.linebar {margin-left:-5px;margin-right:-10px;}
+.menuon>.linebar:nth-child(1) {transform: rotate(130deg);margin-top:13px;margin-bottom:-5px;}
+.menuon>.linebar:nth-child(2) {opacity: 0;}
+.menuon>.linebar:nth-child(3) {transform: rotate(-130deg);margin-top:-8px;}
 
 /* navigation */
 .nav {list-style:none;margin:0;padding:0;text-align:center;background-color:#626262;}
@@ -68,6 +37,14 @@ margin-top:-8px;
 .nav li:hover ul a{background-color:#ee6e12;}
 .nav li:hover ul a:hover{background-color:red;}
 .nav ul a{white-space:nowrap;display:block;border-bottom:1px solid;text-decoration:none;}
+@media screen and (max-width:768px){
+.nav li{display:table;}
+.nav{ background-color:#ee6e12;}
+.nav li:hover a {background-color: red;}
+}
+@media screen and (min-width:768px){
+#dropmenu{display:block;}
+}
 
 /* for full page image view */
 body, html {height: 100%;padding: 0; margin: 0;}
@@ -149,34 +126,32 @@ padding-top: 12px ; text-align:center; color:white; font-size:20px;}
 <span class="contactnumber">+91 9035 442 545</span>
 </div>
 
-
-<div class="menu xs-visible" style="float:right; id="toggle" onclick="button()">
+<div class="menuholder xs-visible">
+<div class="menu" id="toggle" onclick="button()">
 <div class="linebar"></div>
 <div class="linebar"></div>
 <div class="linebar"></div>
 </div>
+</div>
 </header>
 
 
-<div class="collapse navbar-collapse" id="myNavbar">
+<div id="dropmenu">
 <ul class="nav">
-	
+<li><a href="#">Home</a></li>
+<li><a href="#">About-us</a></li>
 
-	<li><a href="#">Home</a></li>
-	<li><a href="#">About-us</a></li>
-	
-	<li>
-	<a href="#">Events</a>
-		<ul>
-		<li><a href="#">National Human <br>Resources <br>Conference - 2017</a></li>
-		<li><a href="#">Power Summit - <br>Sultanate of Oman</a></li>
-		<li><a href="#">UPCOMING EVENTS</a></li>
-		</ul>
-	</li>
-	
-	<li><a href="#">Gallery</a></li>
-	<li><a href="#">Contact</a></li>
+<li>
+<a href="#">Events</a>
+<ul>
+<li><a href="#">National Human <br>Resources <br>Conference - 2017</a></li>
+<li><a href="#">Power Summit - <br>Sultanate of Oman</a></li>
+<li><a href="#">UPCOMING EVENTS</a></li>
+</ul>
+</li>
 
+<li><a href="#">Gallery</a></li>
+<li><a href="#">Contact</a></li>
 </ul>
 </div>
 
@@ -252,24 +227,24 @@ sdafsdjkfhalkjdfhnaskjndfksajdbndfcksj
 
 
 <script>
-var i = 1;
+var t = 1;
 
 function button() {
-if (i == 1) {
+if (t == 1) {
 // add stuff here
-document.getElementById('fonts').style.display = "block";
+document.getElementById('dropmenu').style.display = "block";
 document.getElementById('toggle').className = 'menuon';
 // end stuff here
-document.getElementById('demo').innerHTML = i;
-i = 2;
+
+t = 2;
 }
 else {
 // add stuff here
-document.getElementById('fonts').style.display = "none";
+document.getElementById('dropmenu').style.display = "none";
 document.getElementById('toggle').className = 'menu';
 // end stuff here
-document.getElementById('demo').innerHTML = i;
-i = 1;
+
+t = 1;
 }
 
 
