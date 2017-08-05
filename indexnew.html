@@ -41,10 +41,10 @@ body {margin:0;font-family: "Lato", sans-serif;}
 .nav li{display:table;}
 .nav{ background-color:#ee6e12;}
 .nav li:hover a {background-color: red;}
+.dropblock{display:block;}
+.dropnone{display:none;}
 }
-@media screen and (max-width:768px){
-#dropmenu{display:none;}
-}
+.nav .active {background-color:#ee6e12;}
 
 /* for full page image view */
 body, html {height: 100%;padding: 0; margin: 0;}
@@ -112,7 +112,7 @@ padding-top: 12px ; text-align:center; color:white; font-size:20px;}
   to {opacity: 1}
 }
 
-.bottomfooter {background-color:grey;width:100%;}
+.bottomfooter {background-color:#626262;width:100%;text-align:center;color:#e0e0e0;}
 
 </style>
 </head>
@@ -138,20 +138,20 @@ padding-top: 12px ; text-align:center; color:white; font-size:20px;}
 
 <div id="dropmenu">
 <ul class="nav">
-<li><a href="#">Home</a></li>
-<li><a href="#">About-us</a></li>
+<li><a class="active" href="#">Home</a></li>
+<li><a href="en/about-us.html">About-us</a></li>
 
 <li>
 <a href="#">Events</a>
 <ul>
-<li><a href="#">National Human <br>Resources <br>Conference - 2017</a></li>
+<li><a href="en/hr.html">National Human <br>Resources <br>Conference - 2017</a></li>
 <li><a href="#">Power Summit - <br>Sultanate of Oman</a></li>
-<li><a href="#">UPCOMING EVENTS</a></li>
+<li><a href="en/events.html">UPCOMING EVENTS</a></li>
 </ul>
 </li>
 
-<li><a href="#">Gallery</a></li>
-<li><a href="#">Contact</a></li>
+<!-- <li><a href="#" style="color:grey;">Gallery</a></li> -->
+<li><a href="en/contact.html">Contact</a></li>
 </ul>
 </div>
 
@@ -219,7 +219,9 @@ padding-top: 12px ; text-align:center; color:white; font-size:20px;}
 
 <div class="bottomfooter">
 
-sdafsdjkfhalkjdfhnaskjndfksajdbndfcksj
+<a>© Copyright</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a>Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a style="color:#b3afaf;">Web Design by msb</a>
 
 </div>
   
@@ -228,11 +230,11 @@ sdafsdjkfhalkjdfhnaskjndfksajdbndfcksj
 
 <script>
 var t = 1;
-
+document.getElementById('dropmenu').className = "dropnone";
 function button() {
 if (t == 1) {
 // add stuff here
-document.getElementById('dropmenu').style.display = "block";
+document.getElementById('dropmenu').className = "dropblock";
 document.getElementById('toggle').className = 'menuon';
 // end stuff here
 
@@ -240,7 +242,7 @@ t = 2;
 }
 else {
 // add stuff here
-document.getElementById('dropmenu').style.display = "none";
+document.getElementById('dropmenu').className = "dropnone";
 document.getElementById('toggle').className = 'menu';
 // end stuff here
 
@@ -272,19 +274,6 @@ function showSlides() {
     setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
 
-if (matchMedia) {
-	var mq = window.matchMedia("(min-width: 768px)");
-	mq.addListener(WidthChange);
-	WidthChange(mq);
-}
-
-// media query change
-function WidthChange(mq) {
-
-	var msg = (mq.matches ? "more" : "less") + " than 768 pixels";
-	document.getElementById("current").firstChild.nodeValue = msg;
-
-}
 
 	</script>
 </body>
