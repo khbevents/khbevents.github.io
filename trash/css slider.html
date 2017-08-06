@@ -4,184 +4,50 @@
   <title>Al Najah International</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="http://pearlwhite.tk/purecss.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
-</head>
+ <link rel="stylesheet" href="../purecss.css">
+
 <style>
-/*for full page image view*/
-body, html {height: 100%;padding: 0; margin: 0;	border : 1px solid yellow;}
-div#div100 {    height:calc(100vh - 182px);padding: 0; margin: 0;}
-.bg1 {background-image: url(../images/business.jpg);height:100%; background-position: center; background-repeat: no-repeat; background-size: cover;}
-.bg2 {background-image: url(../assets/uploads/banners/11.jpg);
-height:100%;background-position: center;background-repeat: no-repeat;background-size: cover;}
+.bannercontainer{border:1px solid blue;position:relative;height:90vh;}
+.bannerleft{border:1px solid red;width:49%;float:left;height:100%;overflow:hidden;}
+.bannerright{border:1px solid yellow;width:49%;float:left;height:100%;}
+.bottomfooter{border:1px solid green;height:20px;position:relative;}
 
-.bg3 {background-image: url(../assets/uploads/banners/12.jpg);
-height:100%; background-position: center;background-repeat: no-repeat;background-size: cover;}
-
-/*left n & right banner*/
-@media screen and (min-width: 992px) {.bannerleft {width:52%; float:left;border : 2px solid green;}}
-@media screen and (min-width: 992px) {.bannerright {width:48%; float:right;border : 2px solid blue;}}
-
-.ratio{
-    position:relative;
-    width: 100%;
-    height: calc(100vh - 182px);
-    
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;  
-}
-.ratio2{
-    position:relative;
-    width: 100%;
-    height: calc(50vh - 91px);
-    
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;  
-}
-
-
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fades {
-  -webkit-transition:opacity 2000ms ease-in-out;
-  -moz-transition:opacity 2000ms ease-in-out;
-  -o-transition:opacity 2000ms ease-in-out;
-  transition:opacity 2000ms ease-in-out;
-  }
-
-@-webkit-keyframes fades {
-  -webkit-transition:opacity 2000ms ease-in-out;
-  -moz-transition:opacity 2000ms ease-in-out;
-  -o-transition:opacity 2000ms ease-in-out;
-  transition:opacity 2000ms ease-in-out;
-  
-}
-
-@keyframes fades {
-  -webkit-transition:opacity 2000ms ease-in-out;
-  -moz-transition:opacity 2000ms ease-in-out;
-  -o-transition:opacity 2000ms ease-in-out;
-  transition:opacity 2000ms ease-in-out;
-  
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
--webkit-transition:opacity 2000ms ease-in-out;
-
+.ratio{background-repeat:no-repeat;background-position:center center;background-size: cover;}
 </style>
 
 
 
 <body>
 
+
+<div class="bannercontainer">
+
 <div class="bannerleft">
-	<div class="slideshow-container">
-
-<div class="mySlides fades">
-  <div class="numbertext">1 / 3</div>
-  <div id="div100" ><div class="bg1"></div></div>
-  <div class="text"></div>
-</div>
-
-<div class="mySlides fades">
-  <div class="numbertext">2 / 3</div>
-  <div id="div100" ><div class="bg2"></div></div>
-  <div class="text"></div>
-</div>
-
-<div class="mySlides fades">
-  <div class="numbertext">3 / 3</div>
-  <div id="div100" ><div class="bg3"></div></div>
-  <div class="text"></div>
-</div>
+		<img class="ratio" src="../images/9.jpg">
+<div class="ratio" style="background-image:url('../images/9.jpg')"></div>
 
 </div>
 
 
-<div style="text-align:center;margin-top:-25px;border:">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
+<div class="bannerright">
+
+RIGHT BAN
+
+</div>
 </div>
 
 
+<div class="bottomfooter">
+
+<a>© Copyright</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a>Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a style="color:#b3afaf;">Web Design by msb</a>
 
 </div>
-
-
 
 
 <script>
-var slideIndex = 0;
-showSlides();
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex> slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
 </script>
 
   </body>
