@@ -1,9 +1,7 @@
 function spawnCall() {
 	
 document.getElementById("headercontent").innerHTML = 
-"<img src='img/logoeng.png' height='80'>" +
-
-"<img class='xs-hidden logoarb' src='img/logoarb.png' height='80' style='float:right;'>" +
+"<img src='img/Logo Al Najah-1.jpg' height='80'>" +
 
 "<div class='contactheader xs-hidden'>" +
 
@@ -82,13 +80,11 @@ document.getElementById("footercontent").innerHTML =
 
 "</div><br>" +
 
-"<img class='logoengfooter' src='img/logoeng.png'>" +
-
-"<img class='logoarbfooter' src='img/logoarb.png'>" +
+"<img class='logoengfooter' src='img/Logo Al Najah-1.jpg'>" +
 
 "</div>" +
 
-"<div class='col-sm-3' style='color:white;'>Flat:91, Building:205, Road:2803,<br>Block:42, Al Seef.<br>Kingdom of Bahrain, <br>Mobile:+91-9739545678<br>Email: info@nexrise-events.com</div>" +
+"<div class='col-sm-3' style='color:white;'>No.1,3rd Cross,<br>AMC Road <br> Bangalore 560045<br> Contact:<br>Mobile:+91 9035442545 <br>Email:info@alnajahevents.com</div>" +
 
 "<div class='col-sm-3 xs-visible'><img src='img/f.jpg' class='sm' href='https://www.facebook.com/NexRise-Events-SPC-1437870999658149/'>" +
 
