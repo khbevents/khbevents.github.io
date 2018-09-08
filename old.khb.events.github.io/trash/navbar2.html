@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Al Najah International</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="purecss.css">
+
+<style>
+/* navigation */
+.nav {list-style:none;margin:0;padding:0;text-align:center;background-color:#626262;}
+.nav li{position:relative;display:inline;}
+.nav a {display:inline-block;padding:10px;color:white;text-decoration: none;}
+
+.nav ul {position:absolute;left:-9999px;margin:0;padding:0;text-align:left;background-color:#626262;}
+.nav ul li{display:block;}
+.nav li:hover ul{left:0;z-index:1;}
+
+
+.nav li:hover a{background-color:#ee6e12; transition:.5s ease-in-out; }
+
+
+
+.nav li:hover ul a:hover{background-color:red;}
+.nav ul a{white-space:nowrap;display:block;border-bottom:1px solid;text-decoration:none;}
+@media screen and (max-width:768px){
+.nav li{display:list-item;width:100%;}
+.nav a {width:100%; padding-left:0;padding-right:0;text-align:left;}
+.nav{ background-color:#ee6e12;}
+.nav li:hover a {background-color: red;}
+.nav li:hover ul{width:80%;}
+.dropblock{display:block;}
+.dropnone{display:none;}
+}
+.nav .active {background-color:#ee6e12;}
+
+
+.animback {width:300px;background-color:green;height:100px;}
+.anim {margin:auto;width:0px;background-color:orange;height:100px;transition:width .5s;}
+.animback:hover>.anim{width:300px;}
+
+
+</style>
+</head>
+<body>
+</style>
+</head>
+<body>
+ 
+<header>
+<img src="images2/newlogo.png" height="80">
+<img src="images2/newname.png" height="80">
+<div class="contactheader xs-hidden">
+<span>Contact Us</span><br>
+<span class="contactnumber">+91 9035 442 545</span>
+</div>
+
+<div class="menuholder xs-visible">
+<div class="menu" id="toggle" onclick="button()">
+<div class="linebar"></div>
+<div class="linebar"></div>
+<div class="linebar"></div>
+</div>
+</div>
+</header>
+
+
+<div id="dropmenu">
+<ul class="nav">
+<li><a class="active" href="#">Home</a></li>
+<li><a href="en/about-us.html">About-us</a></li>
+
+<li>
+<a href="#">Events</a>
+<ul>
+<li><a href="en/hr.html">National Human <br>Resources <br>Conference - 2017</a></li>
+<li><a href="#">Power Summit - <br>Sultanate of Oman</a></li>
+<li><a href="en/events.html">UPCOMING EVENTS</a></li>
+</ul>
+</li>
+
+<!-- <li><a href="#" style="color:grey;">Gallery</a></li> -->
+<li><a href="en/contact.html">Contact</a></li>
+</ul>
+</div>
+
+<div class="animback">
+<div class="anim"></div>
+</div>
+
+
+<script>
+var t = 1;
+document.getElementById('dropmenu').className = "dropnone";
+function button() {
+if (t == 1) {
+// add stuff here
+document.getElementById('dropmenu').className = "dropblock";
+document.getElementById('toggle').className = 'menuon';
+// end stuff here
+
+t = 2;
+}
+else {
+// add stuff here
+document.getElementById('dropmenu').className = "dropnone";
+document.getElementById('toggle').className = 'menu';
+// end stuff here
+
+t = 1;
+}
+
+
+}
+
+
+
+	</script>
+</body>
+</html>
